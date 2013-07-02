@@ -57822,3 +57822,298 @@ Served asset /application.js - 304 Not Modified (2ms)
 
 Started GET "/assets/twitter/glyphicons-halflings.png" for 127.0.0.1 at 2013-07-01 18:13:58 +0800
 Served asset /twitter/glyphicons-halflings.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-02 22:51:52 +0800
+Processing by HomeController#index as HTML
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=admin command=[34m{:ismaster=>1} [0m([32m55.0883ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=plymouth_development collection=focus selector=[34m{"$query"=>{"state"=>"online"}, "$orderby"=>{"updated_at"=>-1}} [0mflags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil ([32m19.8264ms[0m)
+  Rendered app/cells/focuss/index.slim (5.5ms)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=plymouth_development collection=summaries selector=[34m{"$query"=>{}, "$orderby"=>{:_id=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m0.4780ms[0m)
+  Rendered app/cells/summarys/index.slim (3.2ms)
+  Rendered templates/_footer.slim (6.3ms)
+  Rendered home/index.slim within layouts/application (489.4ms)
+Completed 200 OK in 1276ms (Views: 1275.3ms)
+
+
+Started GET "/assets/admin/news.css?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /admin/news.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /application.css - 200 OK (24ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/twitter/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap-responsive.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/focus.css?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /focus.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /index.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /home.css - 200 OK (5ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /news.css - 200 OK (3ms)
+
+
+Started GET "/assets/summarys.css?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /summarys.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/affix.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/typeahead.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/typeahead.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/alert.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/scrollspy.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/tooltip.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:54 +0800
+Served asset /twitter/bootstrap/tab.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /twitter/bootstrap/popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /tree.jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (112ms)
+
+
+Started GET "/assets/mf-pattern/mF_expo2010.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /mf-pattern/mF_expo2010.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/admin/news.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /admin/news.js - 200 OK (2ms)
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /ckeditor/init.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /home.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/myfocus-2.0.1.min.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /myfocus-2.0.1.min.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /news.js - 200 OK (2ms)
+
+
+Started GET "/assets/summarys.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /summarys.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /application.js - 200 OK (71ms)
+
+
+Started GET "/javascripts/jsdate/WdatePicker.js" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/jsdate/WdatePicker.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/ycxxww/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (106.1ms)
+
+
+Started GET "/assets/illustration/logo.png" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /illustration/logo.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/illustration/link_icon.jpg" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /illustration/link_icon.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/banner/banner1.png" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /banner/banner1.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/mf-pattern/mF_expo2010.css" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /mf-pattern/mF_expo2010.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/mf-pattern/mF_expo2010.js" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+Served asset /mf-pattern/mF_expo2010.js - 304 Not Modified (6ms)
+
+
+Started GET "/image/illustration/line.jpg" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+
+ActionController::RoutingError (No route matches [GET] "/image/illustration/line.jpg"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/ycxxww/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/image/illustration/li.gif" for 127.0.0.1 at 2013-07-02 22:51:55 +0800
+
+ActionController::RoutingError (No route matches [GET] "/image/illustration/li.gif"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/ycxxww/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)

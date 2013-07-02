@@ -1,4 +1,4 @@
-Sps::Application.routes.draw do
+Plymouth::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
 
   get "home/index"

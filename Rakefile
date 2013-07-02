@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Sps::Application.load_tasks
+Plymouth::Application.load_tasks
