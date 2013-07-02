@@ -1,0 +1,79 @@
+javascript:
+  //设置
+  myFocus.set({
+    id:'myFocus',//ID
+    pattern:'mF_expo2010'//风格
+  });
+
+div class="top_base"
+  div class="top"
+    div class="top_logo"
+      img width="300" height="60" src=asset_path("illustration/logo.png")
+    div class="top_nav"
+      = render_navigation(:expand_all => true)
+
+div class="banner_base"
+  div class="banner"
+    = render_cell "focuss", :index
+  div class="banner_line_base"
+    div class="banner_line"
+  div class="main_base"
+    div class="main"
+      div class="main_about"
+        div class="main_title"
+          span Brief
+          a href="#"
+            p 体育学院简介
+        div class="main_about_content"
+          p
+            = render_cell 'summarys', :index
+        div class="main_linkmore"
+          img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
+          a href="#" 详情
+      div class="main_news"
+        div class="main_title"
+          span News
+          a href="#"
+            p 学院新闻
+
+        div class="main_news_dynamic"
+          div class="main_news_dynamic_left"
+
+            ul
+              li
+                img src=asset_path("banner/banner1.png") 
+                span 
+                  a href="#">我校2013年学生第九套广播体操比赛圆满闭幕
+                  p 为了推广第九套广播体操，促进校园体育运动广泛开展，活跃校园体育文化活动，激发学生参与体育锻炼的热情
+
+        div class="main_news_content"
+          ul
+            li
+              a href="#">我校2013年学生第九套广播体操比赛圆满闭幕
+              span [6-10]
+            li
+              a href="#">我校2013年学生第九套广播体操比赛圆满闭幕
+              span [6-10]
+            li
+              a href="#">我校2013年学生第九套广播体操比赛圆满闭幕
+              span [6-10]
+
+        div class="main_linkmore"
+          img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
+          a href="#" 更多
+
+      div class="main_others"
+        div class="main_title"
+          span Notification
+          a href="#"
+            p 通知公告
+
+        div class="main_not"
+          |学校游泳池将于6月10日起开放，具体开放时间为双休日、节假日下午3点至7点，行课期间（周一至周五）因有公共体育课游泳课教学，不开放。
+        
+        div class="main_linkmore"
+          img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
+          a href="#">历史记录
+
+  = render "templates/footer"  
+  

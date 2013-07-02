@@ -1,0 +1,45 @@
+.main.login_page
+  .login_left.pull-left
+    .login-banner
+      h3.text-info 专项资金申报平台
+      p 四川省生产性服务业专项资金项目申报平台，本平台提供“示范企业（功能区）申报”、“专项资金项目申报”两大类申报类型申报。
+      .notice.alert.alert-success
+        -if @notice
+          .nav
+            h4
+              i.icon-bullhorn.text-xlarge.margin-right5
+              span.text-large 通知公告
+          p= @notice.content.html_safe
+
+    hr
+
+  .login-right.pull-right
+    .browser.alert
+      #ie-warning
+        | 您正在使用的浏览器 Internet Explorer 内核版本太低，在本页面的显示效果可能有差异。建议您升级到最新版、
+        a href="http://www.microsoft.com/china/windows/internet-explorer/" target="_blank" Internet Explorer 8
+        | 或以下浏览器：
+        a href="http://firefox.com.cn/download/" Firefox
+        | /
+        a href="http://chrome.google.com" Chrome
+        | /
+        a href="Safarihttp://www.apple.com.cn/safari/" Safari
+        | /
+        a href="Operahttp://www.operachina.com/" Opera
+    .right-con.thumbnail
+              
+      .login-connect.alert.alert-success
+        h4.nav-tabs
+          i.icon-comments.text-large
+          | 求助
+        .container-fluid
+          p
+            i.icon-user.margin-right5
+            | xxxxxxxxxxx
+          p
+            i.icon-user.margin-right5
+            | （028）00000000
+          p
+            i.icon-envelope.margin-right5
+            | 000000＠qq.com
+  .clearfix

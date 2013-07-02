@@ -1,0 +1,9 @@
+div id="myFocus"
+  / <!--焦点图盒子-->
+  div class="pic"
+    / <!--图片列表-->
+    ul class="focus"
+      - @focuss.each do |focus|
+        li
+          a href=focus.url
+            img src=focus.image.url thumb="" text=focus.title

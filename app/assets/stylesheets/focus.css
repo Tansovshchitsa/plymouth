@@ -1,0 +1,24 @@
+/*焦点图*/
+#myFocus{
+  width:960px;
+  height:350px;
+}
+
+.focus{
+  margin:0;
+  padding:0;
+}
+.pic{
+  width:100%;
+  height:100%;
+  float:left;
+}
+.focus li{
+  list-style:none;
+  float:left;
+}
+
+.focus li img{
+  width: 960px;
+  height:350px;
+}

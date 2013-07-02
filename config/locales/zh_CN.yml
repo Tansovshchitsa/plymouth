@@ -1,0 +1,122 @@
+zh_CN:
+  system:
+    name: 体育学院首页
+    title: 体育学院首页
+    admin_title: 体育学院-后台管理
+    focus: 焦点图管理
+    new: 新闻管理
+    logout: 退出
+  state:
+    new: 新建
+    pass: 审核通过
+    notpass: 审核未通过 
+    offline: 下线
+    online: 上线
+  controllers:
+    dashboard:
+      actions:
+        index: 我的工作台
+    customfield:
+      actions:
+        new: 新建
+  helpers:
+    submit:
+      enterprises:
+        create: 创建
+        edit: 更新
+        update: 更新
+  simple_form:
+    labels:
+      user:
+        tel: 电话
+        id_card: 身份证
+        old_password: 旧密码
+        login: 用户名
+        password: 密码
+        password_confirmation: 确认密码
+        mail: 联系邮箱
+        mobile: 手机
+        submit: 保存
+      focus:
+        title: 标题
+        url: 跳转URL
+        image: 焦点图
+      news:
+        title: 新闻标题
+        content: 新闻内容
+        author: 作者
+    hints:
+      user:
+        login: 6位以上英文字母，请勿使用中文
+        password: 密码至少6位字符
+        password_confirmation: 请输入确认密码
+    placeholders:
+      user:
+        mail: 邮箱格式 如:example@163.com
+  ckeditor:
+    page_title: "CKEditor 文件管理"
+    confirm_delete: "删除文件？"
+    buttons:
+      cancel: "Cancel"
+      upload: "上传"
+      delete: "删除"
+  mongoid:
+    errors:
+      models:
+        enterprise:
+          attributes:
+            name:
+              blank: "不能为空"
+              taken: "该企业已经注册"
+            buiness_code:
+              blank: "不能为空"
+            buiness_capital:
+              blank: "不能为空"
+              not_a_number: "此项必须为数字"
+            buiness_create_date:
+              blank: "不能为空"
+            office_address:
+              blank: "不能为空"
+            office_postal_code:
+              blank: "不能为空"
+              not_a_number: "此项必须为数字"
+            office_phone:
+              blank: "不能为空"
+            office_fax:
+              blank: "不能为空"
+            legal_name:
+              blank: "不能为空"
+            legal_idcard:
+              blank: "不能为空"
+            legal_phone:
+              blank: "不能为空"
+              not_a_number: "此项必须为数字"
+            legal_email:
+              blank: "不能为空"
+        user:
+          attributes:
+            mobile:
+              blank: 必填项
+              invalid: 格式不正确
+            tel:
+              blank: 必填项
+              invalid: 格式不正确
+            id_card:
+              invalid: 格式不正确
+            login:
+              invalid: 请填写正确的格式
+            email:
+              blank: 必填项
+              invalid: 请填写正确的邮箱格式 如： example@163.com
+              taken: 此邮箱已经被注册了
+            password:
+              blank: 必填项
+              confirmation: 确认密码与密码输入不一致
+            password_confirmation:
+              blank: 必填项
+        article:
+          attributes:
+            name:
+              blank: 名称不能为空
+            content:
+              blank: 附件不能为空
