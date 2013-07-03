@@ -50,7 +50,7 @@ div class="banner_base"
             p 通知公告
 
         div class="main_not"
-          = @announcement.content.html_safe
+          = @announcement.content.html_safe if @announcement
         
         div class="main_linkmore"
           img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
