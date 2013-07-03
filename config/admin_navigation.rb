@@ -14,6 +14,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :notice,'党建与学生工作',"#"
     primary.item :articles,"基本管理" do |archive|
       archive.item :focus,"焦点图",admin_focuss_path
+      archive.item :link, "友情链接", admin_links_path
       archive.item :summary,'学院简介',new_admin_summary_path
     end
     primary.item :notice,'资料下载',"#"

@@ -19,6 +19,12 @@ Plymouth::Application.routes.draw do
         get "notpass"
       end
     end
+    resources :links do 
+      member do 
+        get "offline"
+        get "online"
+      end
+    end
   end
 
   devise_for :users

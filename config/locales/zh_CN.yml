@@ -1,9 +1,10 @@
 zh_CN:
   system:
-    name: 体育学院首页
-    title: 体育学院首页
-    admin_title: 体育学院-后台管理
+    name: 普利茅斯中国学联
+    title: 普利茅斯中国学联
+    admin_title: 普利茅斯中国学联-后台管理
     focus: 焦点图管理
+    link: 友情链接
     new: 新闻管理
     logout: 退出
   state:
@@ -45,6 +46,9 @@ zh_CN:
         title: 新闻标题
         content: 新闻内容
         author: 作者
+      link:
+        title: 标题
+        url: 跳转URL
     hints:
       user:
         login: 6位以上英文字母，请勿使用中文

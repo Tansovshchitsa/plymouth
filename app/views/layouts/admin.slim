@@ -12,16 +12,13 @@ html
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
-          .span9.pull-left
+          .span11.pull-left
             span.brand.pull-left
               i.icon-home
               a href=main_app.root_path title="回首页"
                 strong.text-info=t('system.admin_title')
             span.divider-vertical.pull-left
             = render_navigation(:context => :admin,:expand_all => true)
-          form class="navbar-search pull-left"
-            input type="text" class="search-query" placeholder="Search"
-
           .span1.pull-right
 
     .container style="margin-top:60px;"
