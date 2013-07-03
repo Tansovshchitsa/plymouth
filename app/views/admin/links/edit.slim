@@ -1,0 +1,7 @@
+= simple_form_for @focus,url: admin_focus_path(@focus) do |f|
+  = f.input :title
+  = f.input :url
+  a target="_blank" href=@focus.image.url
+    img src=@focus.image.thumb.url
+  = f.input :image, as: :file
+  = f.submit "更新"
