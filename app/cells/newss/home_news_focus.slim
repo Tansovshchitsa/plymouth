@@ -1,0 +1,11 @@
+- if @news
+  div class="main_news_dynamic"
+    div class="main_news_dynamic_left"
+      ul
+        li
+          img src=@news.image.thumb.url
+          span 
+            a href=news_path(@news)
+              = ">#{@news.title}"
+            p 
+              = @news.thumb.to_s.html_safe

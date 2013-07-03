@@ -1,0 +1,7 @@
+- @newss.each do |news|
+  div class="main_news_content"
+    ul
+      li
+        a href=news_path(news)
+          = ">#{news.title}"
+        span [6-10]

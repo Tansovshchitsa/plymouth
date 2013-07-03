@@ -36,27 +36,8 @@ div class="banner_base"
           a href="#"
             p 最新动态
 
-        div class="main_news_dynamic"
-          div class="main_news_dynamic_left"
-
-            ul
-              li
-                img src=asset_path("banner/banner1.png") 
-                span 
-                  a href="#">我校2013年学生第九套广播体操比赛圆满闭幕
-                  p 为了推广第九套广播体操，促进校园体育运动广泛开展，活跃校园体育文化活动，激发学生参与体育锻炼的热情
-
-        div class="main_news_content"
-          ul
-            li
-              a href="#">我校2013年学生第九套广播体操比赛圆满闭幕
-              span [6-10]
-            li
-              a href="#">我校2013年学生第九套广播体操比赛圆满闭幕
-              span [6-10]
-            li
-              a href="#">我校2013年学生第九套广播体操比赛圆满闭幕
-              span [6-10]
+        = render_cell "newss", :home_news_focus
+        = render_cell "newss", :home_news_list
 
         div class="main_linkmore"
           img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
@@ -69,7 +50,7 @@ div class="banner_base"
             p 通知公告
 
         div class="main_not"
-          |学校游泳池将于6月10日起开放，具体开放时间为双休日、节假日下午3点至7点，行课期间（周一至周五）因有公共体育课游泳课教学，不开放。
+          = @announcement.content.html_safe
         
         div class="main_linkmore"
           img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 

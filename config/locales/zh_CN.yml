@@ -3,6 +3,7 @@ zh_CN:
     name: 普利茅斯中国学联
     title: 普利茅斯中国学联
     admin_title: 普利茅斯中国学联-后台管理
+    announcement: 通知
     focus: 焦点图管理
     link: 友情链接
     new: 新闻管理
@@ -44,11 +45,16 @@ zh_CN:
         image: 焦点图
       news:
         title: 新闻标题
+        focus: 是否带缩略图
+        image: 缩略图
         content: 新闻内容
         author: 作者
       link:
         title: 标题
         url: 跳转URL
+      announcement:
+        content: 通知内容
+        author: 作者
     hints:
       user:
         login: 6位以上英文字母，请勿使用中文

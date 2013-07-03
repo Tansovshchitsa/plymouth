@@ -19,6 +19,7 @@ Plymouth::Application.routes.draw do
         get "notpass"
       end
     end
+    resources :announcements
     resources :links do 
       member do 
         get "offline"
@@ -30,6 +31,7 @@ Plymouth::Application.routes.draw do
   devise_for :users
 
   resources :users
+  resources :newss ,only: [:show]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
