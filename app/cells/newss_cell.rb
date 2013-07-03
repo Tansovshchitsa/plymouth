@@ -1,6 +1,6 @@
 class NewssCell < Cell::Rails
   def home_news_list
-    @newss = News.where(state: "pass", focus: "no").desc(:created_at).paginate(:page=>1,:per_page=>5)
+    @newss = News.where(state: "pass", focus: "false").desc(:created_at).paginate(:page=>1,:per_page=>5)
     render
   end
 
