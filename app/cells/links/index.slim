@@ -1,4 +1,5 @@
 - @links.each do |link|
   a href=link.url 
     = link.title
-  font |
+  - unless @links.last == link
+    font |
