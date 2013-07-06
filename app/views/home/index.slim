@@ -13,12 +13,11 @@ div class="banner_base"
   div class="banner_logo"
     div class="top_logo"
       img width="300" height="60" src=asset_path("illustration/logo.png")
-    div style="padding-top: 30px; float: right;"
-      ul style="list-style:none;"
-        - Sns.all.each do |sns|
-          li style="float: right; padding-left: 15px;"
-            a title=sns.title class="twitter" href=sns.url
-              img alt=sns.title src=sns.image.url
+    div style="padding-top: 20px;padding-bottom: 20px; float: right;"
+      - Sns.all.each do |sns|          
+        a href=sns.url target="_blank"
+          div id="icon-facebook" class="sns-icon" data-toggle="tooltip" title="" data-original-title="Facebook" style="margin-right: 20px;"
+            img src=sns.image.url style="height: 60px;"
   div class="banner"
     = render_cell "focuss", :index
   / div class="banner_line_base"
