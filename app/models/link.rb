@@ -4,6 +4,7 @@ class Link
 
   field :title
   field :url
+  field :type
 
   state_machine :initial => :new do
      event :offline do 

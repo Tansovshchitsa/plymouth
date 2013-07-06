@@ -51,6 +51,7 @@ zh_CN:
         author: 作者
       link:
         title: 标题
+        type: 链接类型
         url: 跳转URL
       announcement:
         content: 通知内容
