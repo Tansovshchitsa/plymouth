@@ -15,15 +15,10 @@ div class="banner_base"
       img width="300" height="60" src=asset_path("illustration/logo.png")
     div style="padding-top: 30px; float: right;"
       ul style="list-style:none;"
-        li style="float: right; padding-left: 12px;"
-          a title="牛津华人社区网站" class="twitter" href="http://www.xiliable.net/"
-            img alt="牛津华人社区网站" src="http://www.oxcssa.org.uk/wp/wp-content/themes/boldy/images/ico_xiliable.png"
-        li style="float: right; padding-left: 12px;"
-          a title="牛津华人社区网站" class="twitter" href="http://www.xiliable.net/"
-            img alt="牛津华人社区网站" src="http://www.oxcssa.org.uk/wp/wp-content/themes/boldy/images/ico_xiliable.png"
-        li style="float: right; padding-left: 12px;"
-          a title="牛津华人社区网站" class="twitter" href="http://www.xiliable.net/"
-            img alt="牛津华人社区网站" src="http://www.oxcssa.org.uk/wp/wp-content/themes/boldy/images/ico_xiliable.png"
+        - Sns.all.each do |sns|
+          li style="float: right; padding-left: 15px;"
+            a title=sns.title class="twitter" href=sns.url
+              img alt=sns.title src=sns.image.url
   div class="banner"
     = render_cell "focuss", :index
   / div class="banner_line_base"

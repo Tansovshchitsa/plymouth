@@ -17,6 +17,7 @@ SimpleNavigation::Configuration.run do |navigation|
       archive.item :focus,"焦点图",admin_focuss_path
       archive.item :link, "友情链接", admin_links_path
       archive.item :summary,'学院简介',new_admin_summary_path
+      archive.item :contact, '联系我们', admin_contacts_path
     end
     primary.item :notice,'资料下载',"#"
 

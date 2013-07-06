@@ -11,7 +11,13 @@ div id="link" class="main_base" style="background-color: #333333;"
       = render_cell "links",:about
     div class="moduletable span2"
       h4 class="" 联系我们
-      = render_cell "links",:about
+      ul class="menu"
+        - Contact.all.each do |contact|
+          li class="item-102"
+            p 
+              = contact.title
+              |：
+              = contact.content
 div class="bottom_base"
     div class="bottom" 
       |版权所有 © 普利茅斯中国学联 All Rights Reserved

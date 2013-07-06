@@ -95,6 +95,13 @@ body{
 	/*border-bottom: 1px solid #464646;*/
 }
 
+.moduletable p {
+	text-decoration:none;
+	color: #666;
+	font-size: 14px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
 .moduletable a {
 	text-decoration:none;
 	color: #666;
@@ -114,7 +121,7 @@ body{
 }
 
 .moduletable {
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 .moduletable > ul > li > a:focus{

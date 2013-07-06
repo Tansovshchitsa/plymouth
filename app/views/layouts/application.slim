@@ -18,6 +18,7 @@ html lang="en"
     = csrf_meta_tag
   body#body
     = yield
+    = render "templates/share"
   javascript:
     $("div.accordion-body ul li a").each(function(){
        if  ($(this).attr("href") == "#{request.fullpath}"){

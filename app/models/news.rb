@@ -11,10 +11,6 @@ class News
   field :image
   field :focus
 
-  before_save do |news|
-    news.thumb = news.content[0..20]
-  end
-
   state_machine :initial => :new do 
     event :pass do 
       transition [:new,:notpass] => :pass

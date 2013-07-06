@@ -1,0 +1,7 @@
+= simple_form_for @sns,url: admin_sns_path(@sns) do |f|
+  = f.input :title
+  = f.input :url
+  a target="_blank" href=@sns.image.url
+    img src=@sns.image.thumb.url
+  = f.input :image, as: :file
+  = f.submit "更新"

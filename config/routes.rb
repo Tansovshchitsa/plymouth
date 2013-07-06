@@ -13,12 +13,14 @@ Plymouth::Application.routes.draw do
       end
     end
     resources :summarys
+    resources :contacts
     resources :newss do 
       member do 
         get "pass"
         get "notpass"
       end
     end
+    resources :snss
     resources :announcements
     resources :links do 
       member do 

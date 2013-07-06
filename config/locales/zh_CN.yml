@@ -47,6 +47,7 @@ zh_CN:
         title: 新闻标题
         focus: 是否带缩略图
         image: 缩略图
+        thumb: 摘要新闻
         content: 新闻内容
         author: 作者
       link:
