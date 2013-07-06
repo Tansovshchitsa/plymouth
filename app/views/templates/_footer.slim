@@ -6,10 +6,10 @@ div id="link" class="main_base" style="background-color: #333333;"
     div class="moduletable span3"
       h4 class="" 友情链接
       = render_cell "links",:index
-    div class="moduletable span2"
+    div class="moduletable" style="width: 100px;float: left;"
       h4 class="" 关于学联
       = render_cell "links",:about
-    div class="moduletable span2"
+    div class="moduletable span3"
       h4 class="" 联系我们
       ul class="menu"
         - Contact.all.each do |contact|

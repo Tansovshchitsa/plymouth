@@ -19,7 +19,7 @@
             td = link_to sns.title, sns.url
             td 
               a target="_blank" href=sns.image.url
-                img src=sns.image.thumb.url
+                img src=sns.image.url
             td = sns.url
             td 
               = link_to "编辑", edit_admin_sns_path(sns)
