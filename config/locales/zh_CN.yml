@@ -21,6 +21,15 @@ zh_CN:
     customfield:
       actions:
         new: 新建
+  will_paginate:
+    previous_label: 上一页
+    next_label: 下一页
+    pagination:
+      truncate: "..."
+      next: 下一页
+      last: 末尾
+      first: 首页
+      previous: 上一页
   helpers:
     submit:
       enterprises:

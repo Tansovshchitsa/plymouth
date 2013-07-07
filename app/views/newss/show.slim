@@ -1,0 +1,36 @@
+div class="content_base"
+  div class="content"
+    div class="sub_content_show"
+      div class="sub_address"
+        span 学联新闻
+      div class="sub_page"
+        div class="news_list" style="width:100%;"
+          div id="major" style="width:65%; float:left;"
+            div class=""
+            div id="system-message-container"
+              div id="system-message"
+            div id="yoo-zoo" class="yoo-zoo blog-noble blog-noble-42-57"
+              div class="item"
+                div class="pos-date"
+                  span class="day" 
+                    = sprintf '%02d', Time.parse(News.last.created_at.to_s).day.to_i
+                  p class="month" 
+                    = Time.parse(News.last.created_at.to_s).month
+                    |月
+                h1 class="pos-title"
+                  = @news.title
+                div class="floatbox"
+                  div class="pos-content"
+                    = @news.content.to_s.html_safe
+          div id="sidebar-right" class="pull-right" style="width:25%"
+            section class="zoo-comments-list"
+              p class="list-title" 最新动态
+              article class=""
+                = render_cell "newss",:foot_news
+    = render "templates/pl"
+
+
+
+
+
+

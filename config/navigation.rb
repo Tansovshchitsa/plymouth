@@ -7,8 +7,8 @@ SimpleNavigation::Configuration.run do |navigation|
   navigation.renderer = SimpleNavigation::Renderer::Bootstrap
   navigation.autogenerate_item_ids = false
   navigation.items do |primary|
-    primary.item :home,'首页',"#"
-    primary.item :articles,"学联新闻","#"
+    primary.item :home,'首页',root_path
+    primary.item :articles,"学联新闻",newss_path
     primary.item :user,'学联活动',"#"
     primary.item :notice,'学联服务',"#"
     primary.item :notice,'学联论坛',"http://www.plymouthcssa.org/bbs/forum.php"

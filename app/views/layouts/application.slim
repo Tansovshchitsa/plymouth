@@ -17,8 +17,10 @@ html lang="en"
       link href="/assets/bootstrap-ie6.css"  rel="stylesheet" type="text/css"
     = csrf_meta_tag
   body#body
+    = render "templates/top"
     = yield
     = render "templates/share"
+    = render "templates/footer"  
   javascript:
     $("div.accordion-body ul li a").each(function(){
        if  ($(this).attr("href") == "#{request.fullpath}"){

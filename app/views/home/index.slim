@@ -5,19 +5,7 @@ javascript:
     pattern:'mF_expo2010'//风格
   });
 
-div class="top_base"
-  div class="top"
-    div class="top_nav" style="padding-top: 30px;color: #ccc;font-size: 18px;"
-      = render_navigation(:expand_all => true)
 div class="banner_base"
-  div class="banner_logo"
-    div class="top_logo"
-      img width="300" height="60" src=asset_path("illustration/logo.png")
-    div style="padding-top: 20px;padding-bottom: 20px; float: right;"
-      - Sns.all.each do |sns|          
-        a href=sns.url target="_blank"
-          div id="icon-facebook" class="sns-icon" data-toggle="tooltip" title="" data-original-title="Facebook" style="margin-right: 20px;"
-            img src=sns.image.url style="height: 60px;"
   div class="banner"
     = render_cell "focuss", :index
   / div class="banner_line_base"
@@ -46,7 +34,7 @@ div class="banner_base"
 
         div class="main_linkmore"
           img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
-          a href="#" 更多
+          =link_to "更多", newss_path
 
       div class="main_others"
         div class="main_title"
@@ -60,6 +48,3 @@ div class="banner_base"
         div class="main_linkmore"
           img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
           a href="#">历史记录
-
-  = render "templates/footer"  
-  

@@ -1,0 +1,21 @@
+div class="content_base"
+  div class="content"
+    div class="sub_content"
+      div class="sub_address"
+        span 学联新闻
+      div class="sub_page"
+        div class="news_list"
+          ul
+            - @newss.each do |news|
+              li
+                span
+                  span
+                    a href=news_path(news)
+                      = news.title
+                  div
+                    font 
+                      = news.created_at.strftime('%Y-%m-%d %H:%M:%S')
+                div
+                  = news.thumb.to_s.html_safe
+    div style="padding-top: 30px;"
+      =will_paginate @newss,:theme => 'default'

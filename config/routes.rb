@@ -33,7 +33,7 @@ Plymouth::Application.routes.draw do
   devise_for :users
 
   resources :users
-  resources :newss ,only: [:show]
+  resources :newss ,only: [:show,:index]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
