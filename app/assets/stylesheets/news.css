@@ -163,7 +163,7 @@
 }
 
 .sub_content{
-  /*width: 730px;*/
+  width: 100%;
   /*padding-left: 30px;*/
   float: left;
   height: auto;

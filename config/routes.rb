@@ -5,6 +5,11 @@ Plymouth::Application.routes.draw do
   match "/upload/grid/*path" => "gridfs#serve"
 
   namespace :admin do
+    resources :types do 
+      collection do
+        get "get_type"
+      end
+    end
     get "home/index"
     resources :focuss do 
       member do 
@@ -33,6 +38,8 @@ Plymouth::Application.routes.draw do
   devise_for :users
 
   resources :users
+  resources :announcements, only: [:index]
+  resources :summarys, only: [:show,:index]
   resources :newss ,only: [:show,:index]
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -8,14 +8,26 @@ SimpleNavigation::Configuration.run do |navigation|
   navigation.autogenerate_item_ids = false
   navigation.items do |primary|
     primary.item :home,'首页',root_path
-    primary.item :articles,"学联新闻",newss_path
-    primary.item :user,'学联活动',"#"
-    primary.item :notice,'学联服务',"#"
+    primary.item :news,"学联新闻" do |news|
+      Type.where(title: "学联新闻").first.children.each do |children|
+        news.item :title, children.title, newss_path(:type_id => children.id)
+      end if Type.where(title: "学联新闻").first
+    end
+    primary.item :user,'学联活动' do |news|
+      Type.where(title: "学联活动").first.children.each do |children|
+        news.item :title, children.title, newss_path(:type_id => children.id)
+      end if Type.where(title: "学联活动").first
+    end
+    primary.item :notice,'学联服务'do |news|
+      Type.where(title: "学联服务").first.children.each do |children|
+        news.item :title, children.title, newss_path(:type_id => children.id)
+      end if Type.where(title: "学联服务").first
+    end
     primary.item :notice,'学联论坛',"http://www.plymouthcssa.org/bbs/forum.php"
     primary.item :notice,'关于学联' do |archive|
-      archive.item :announcement, "学联简介", "#"
-      archive.item :announcement, "规章制度", "#"
-      archive.item :announcement, "学联委员会", "#"
+      Type.where(title: "关于学联").first.children.each do |children|
+        archive.item :title, children.title, summarys_path(:type_id => children.id)
+      end if Type.where(title: "关于学联").first
     end
     primary.item :notice,'合作赞助',"#"
 

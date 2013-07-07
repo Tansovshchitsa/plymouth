@@ -3,7 +3,7 @@ div class="content_base"
     div class="sub_content_show"
       div class="sub_address"
         span 
-          = @news.type.title
+          = @type.title
       div class="sub_page"
         div class="news_list" style="width:100%;"
           div id="major" style="width:65%; float:left;"
@@ -12,26 +12,11 @@ div class="content_base"
               div id="system-message"
             div id="yoo-zoo" class="yoo-zoo blog-noble blog-noble-42-57"
               div class="item"
-                div class="pos-date"
-                  span class="day" 
-                    = sprintf '%02d', Time.parse(@news.created_at.to_s).day.to_i
-                  p class="month" 
-                    = Time.parse(@news.created_at.to_s).month
-                    |月
-                h1 class="pos-title"
-                  = @news.title
                 div class="floatbox"
                   div class="pos-content"
-                    = @news.content.to_s.html_safe
+                    = @summary.content.to_s.html_safe if @summary
           div id="sidebar-right" class="pull-right" style="width:25%"
             section class="zoo-comments-list"
               p class="list-title" 最新动态
               article class=""
                 = render_cell "newss",:foot_news
-    = render "templates/pl"
-
-
-
-
-
-

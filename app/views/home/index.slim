@@ -5,6 +5,14 @@ javascript:
     pattern:'mF_expo2010'//风格
   });
 
+div class="banner_logo"
+  div class="top_logo"
+    img width="300" height="60" src=asset_path("illustration/logo.png")
+  div style="padding-top: 20px;padding-bottom: 20px; float: right;"
+    - Sns.all.each do |sns|          
+      a href=sns.url target="_blank"
+        div id="icon-facebook" class="sns-icon" data-toggle="tooltip" title="" data-original-title="Facebook" style="margin-right: 20px;"
+          img src=sns.image.url style="height: 40px;"
 div class="banner_base"
   div class="banner"
     = render_cell "focuss", :index
@@ -47,4 +55,4 @@ div class="banner_base"
         
         div class="main_linkmore"
           img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
-          a href="#">历史记录
+          a href=announcements_path >历史记录

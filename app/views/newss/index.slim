@@ -2,7 +2,18 @@ div class="content_base"
   div class="content"
     div class="sub_content"
       div class="sub_address"
-        span 学联新闻
+        span 
+          = @type.nil? ? "最新动态" : @type.title
+        ul class="breadcrumb pull-right" style="background: none;"
+          li
+            i class="icon-home"
+            a href="#" 首页 
+            |/
+            - if @type and @type.parent
+              li = @type.parent.title
+              |/  
+            li class="active"
+              = @type.nil? ? "最新动态" : @type.title
       div class="sub_page"
         div class="news_list"
           ul

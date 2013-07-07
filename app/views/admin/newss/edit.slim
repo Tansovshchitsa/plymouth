@@ -1,6 +1,8 @@
 = simple_form_for @news,url: admin_news_path(@news) do |f|
   = f.input :title
   = f.input :author
+  = f.input :type_id do 
+    = f.select :type_id, Type.all.map { |r| [r.title, r.id] }
   = f.input :image, as: :file
   a target="_blank" href=@news.image.url
     img src=@news.image.thumb.url
