@@ -265,7 +265,7 @@
 }
 
 .news_list ul li span{
-  /*width: 730px;*/
+  width: 100%;
   float: left;
   height: 30px;
   line-height: 36px;
@@ -290,9 +290,9 @@
 
 
 .news_list ul li span div{
-  width: 120px;
+  width: 140px;
   height: 25px;
-  float: left;
+  float: right;
   line-height: 25px;
   padding-top:5px;
 }
