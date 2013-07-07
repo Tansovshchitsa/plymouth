@@ -15,9 +15,9 @@ div id="link" class="main_base" style="background-color: #333333;"
         - Contact.all.each do |contact|
           li class="item-102"
             p 
-              = contact.title
+              = contact.title.to_s.html_safe
               |：
-              = contact.content
+              = contact.content.to_s.html_safe
 div class="bottom_base"
     div class="bottom" 
       |版权所有 © 普利茅斯中国学联 All Rights Reserved
