@@ -12,6 +12,7 @@ class News
   field :focus
   field :enroll, type: Boolean, :default => true
   belongs_to :type
+  has_many :enrolls
 
   state_machine :initial => :new do 
     event :pass do 
