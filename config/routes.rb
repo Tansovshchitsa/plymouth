@@ -20,6 +20,7 @@ Plymouth::Application.routes.draw do
     end
     resources :summarys
     resources :contacts
+    resources :logos
     resources :newss do 
       member do 
         get "pass"
