@@ -7,7 +7,7 @@ zh_CN:
     focus: 焦点图管理
     link: 友情链接
     new: 新闻管理
-    user: 会员管理
+    customer: 会员管理
     logout: 退出
   devise:
     sessions:
@@ -43,6 +43,10 @@ zh_CN:
         update: 更新
   simple_form:
     labels:
+      customer:
+        email: 邮箱
+        username: 用户名
+        tel: 联系方式
       user:
         tel: 电话
         id_card: 身份证

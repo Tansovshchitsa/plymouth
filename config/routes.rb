@@ -27,7 +27,7 @@ Plymouth::Application.routes.draw do
     end
     resources :snss
     resources :announcements
-    resources :users
+    resources :customers
     resources :links do 
       member do 
         get "offline"
@@ -39,6 +39,7 @@ Plymouth::Application.routes.draw do
   #devise_for :users, :controllers => { :sessions => "admin/users" }
   devise_for :users
   resources :users
+  resources :customers
   resources :announcements, only: [:index]
   resources :summarys, only: [:show,:index]
   resources :newss ,only: [:show,:index]
