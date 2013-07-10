@@ -30,7 +30,7 @@ div class="banner_base"
             = render_cell 'summarys', :index
         div class="main_linkmore"
           img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
-          a href="#" 详情
+          a href=summarys_path(:type_id => Type.where(title: "普利茅斯简介").first) 详情
       div class="main_news"
         div class="main_title"
           span News
