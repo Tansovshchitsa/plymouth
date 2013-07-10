@@ -1,6 +1,8 @@
+# encoding: utf-8
+
 class SummarysCell < Cell::Rails
   def index
-    @summary = Summary.all.first.nil? ? Summary.new : Summary.all.first
+    @summary = Summary.where(type: Type.where(title: "普利茅斯简介").first).first
     render
   end
 end
