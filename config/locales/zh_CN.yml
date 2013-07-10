@@ -7,7 +7,12 @@ zh_CN:
     focus: 焦点图管理
     link: 友情链接
     new: 新闻管理
+    user: 会员管理
     logout: 退出
+  devise:
+    sessions:
+      signed_in: "登录成功."
+      signed_out: "退出成功."
   state:
     new: 新建
     pass: 审核通过
@@ -43,6 +48,7 @@ zh_CN:
         id_card: 身份证
         old_password: 旧密码
         login: 用户名
+        username: 用户名
         password: 密码
         password_confirmation: 确认密码
         mail: 联系邮箱

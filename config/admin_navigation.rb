@@ -21,7 +21,7 @@ SimpleNavigation::Configuration.run do |navigation|
       archive.item :link, "友情链接", admin_links_path
       archive.item :contact, '联系我们', admin_contacts_path
     end
-    primary.item :notice,'会员管理',"#"
+    primary.item :notice,'会员管理', admin_users_path
 
     primary.dom_class='nav nav-tabs navigation_font'
   end
