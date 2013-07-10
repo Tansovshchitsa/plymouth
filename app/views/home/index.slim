@@ -7,7 +7,7 @@ javascript:
 
 div class="banner_logo"
   div class="top_logo"
-    img src=asset_path("illustration/logo.png") style="height:60px;width:300px;"
+    img src=Logo.first.image.url style="height:60px;width:300px;"
   div style="padding-top: 20px;padding-bottom: 20px; float: right;"
     - Sns.all.each do |sns|          
       a href=sns.url target="_blank"
@@ -30,7 +30,7 @@ div class="banner_base"
             = render_cell 'summarys', :index
         div class="main_linkmore"
           img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
-          a href="#" 详情
+          a href=summarys_path(:type_id => Type.where(title: "普利茅斯简介").first) 详情
       div class="main_news"
         div class="main_title"
           span News
