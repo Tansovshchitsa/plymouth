@@ -10,7 +10,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :dashboard,'首页',"#"
     primary.item :summary,'关于学联' do |archive|
       Type.where(title: "关于学联").first.children.each do |children|
-        archive.item :title, children.title, newss_path(:type_id => children.id)
+        archive.item :title, children.title, new_admin_summary_path(:type_id => children.id)
       end if Type.where(title: "关于学联").first
     end
     primary.item :link, "键值对管理", admin_types_path
