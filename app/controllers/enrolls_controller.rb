@@ -19,12 +19,12 @@ class EnrollsController < ApplicationController
   end
 
   def create
+    #@news = News.find(params[:id])
     @enroll = Enroll.new(params[:enroll])
     @customer = Customer.new(params[:customer])
 
     if @enroll.save
-      format.html { redirect_to @enroll, notice: 'Enroll was successfully created.' }
-      format.json { render json: @enroll, status: :created, location: @enroll }
+      redirect_to newss_path
     else
       format.html { render action: "new" }
       format.json { render json: @enroll.errors, status: :unprocessable_entity }
