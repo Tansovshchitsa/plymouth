@@ -23,6 +23,8 @@ div class="content_base"
                 div class="floatbox"
                   div class="pos-content"
                     = @news.content.to_s.html_safe
+                - if @news.enroll
+                  = render "customers/link"
           div id="sidebar-right" class="pull-right" style="width:25%"
             section class="zoo-comments-list"
               p class="list-title" 最新动态

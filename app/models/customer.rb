@@ -3,4 +3,6 @@ class Customer
   field :email, type: String
   field :username, type: String
   field :tel, type: String
+
+  
 end

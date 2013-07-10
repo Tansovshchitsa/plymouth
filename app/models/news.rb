@@ -10,6 +10,7 @@ class News
   field :thumb
   field :image
   field :focus
+  field :enroll, type: Boolean, :default => true
   belongs_to :type
 
   state_machine :initial => :new do 
