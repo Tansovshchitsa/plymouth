@@ -10,7 +10,7 @@ class News
   field :thumb
   field :image
   field :focus
-  field :enroll, type: Boolean, :default => true
+  field :applied, type: Boolean, :default => false
   belongs_to :type
   has_many :enrolls
 

@@ -30,6 +30,7 @@ Plymouth::Application.routes.draw do
     resources :snss
     resources :announcements
     resources :customers
+    resources :enrolls
     resources :links do 
       member do 
         get "offline"

@@ -9,6 +9,7 @@
   = f.input :focus, as: :radio_buttons
   = f.input :thumb
   = f.input :content, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} }
+  = f.input :applied, as: :radio_buttons,input_html: {value: false}
   = f.submit "保存"
 javascript:
   $.getJSON("/admin/types/get_type",function(data){

@@ -8,6 +8,8 @@ zh_CN:
     link: 友情链接
     new: 新闻管理
     customer: 会员管理
+    enroll: 活动报名管理
+    enroll_info: 报名信息
     logout: 退出
   devise:
     sessions:
@@ -69,6 +71,7 @@ zh_CN:
         thumb: 摘要新闻
         content: 新闻内容
         author: 作者
+        applied: 是否需要报名
       link:
         title: 标题
         type: 链接类型
