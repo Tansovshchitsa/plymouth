@@ -11,11 +11,13 @@
           th 用户名
           th 联系方式
           th 邮箱
+          th 联系电话
+          th 报名项目
       tbody
-        - @enroll.customers.each do |customer|
+        - @enrolls.each do |enroll|
           tr
-            td =
-            td = customer.username
-            td =
-            td =
+            td = enroll.username
+            td = enroll.email
+            td = enroll.tel
+            td = enroll.news.title
          

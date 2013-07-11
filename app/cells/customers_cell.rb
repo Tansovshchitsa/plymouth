@@ -4,7 +4,7 @@ class CustomersCell < Cell::Rails
 		@news = args[:news]
 		@customer = Customer.new
     @enroll = Enroll.new
-		render 
+		render
 	end
 
 end

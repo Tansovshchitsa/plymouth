@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 class EnrollsController < ApplicationController
   load_and_authorize_resource
 
@@ -10,8 +12,7 @@ class EnrollsController < ApplicationController
   end
 
   def new
-    @enroll = Enroll.new
-    @customer = Customer.new
+    
   end
 
   def edit
@@ -19,15 +20,12 @@ class EnrollsController < ApplicationController
   end
 
   def create
-    #@news = News.find(params[:id])
     @enroll = Enroll.new(params[:enroll])
-    @customer = Customer.new(params[:customer])
 
     if @enroll.save
-      redirect_to newss_path
+      redirect_to news_path(@enroll.news), :notice => "报名成功！"
     else
-      format.html { render action: "new" }
-      format.json { render json: @enroll.errors, status: :unprocessable_entity }
+      redirect_to news_path(@enroll.news), :notice => "报名失败！请核对填写信息。"
     end
   end
 

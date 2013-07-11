@@ -1,7 +1,6 @@
 = simple_form_for @enroll do |f|
   = f.input :news_id ,as: "hidden", :input_html => {value: @news.id}
-  = f.simple_fields_for :customer do |customer|
-    = customer.input :email, :required => false, :autofocus => true
-    = customer.input :username
-    = customer.input :tel
+  = f.input :email, :required => false, :autofocus => true
+  = f.input :username
+  = f.input :tel
   = f.submit "提交", :class => "btn"

@@ -25,6 +25,7 @@ div class="content_base"
                     = @news.content.to_s.html_safe
                   - if @news.applied
                     div
+                      = render_cell 'messages', :index, :message=>flash[:notice]
                       = "共有[ #{@news.enrolls.count} ]人参加该活动"
                       = render_cell "customers", :new, :news => @news
           div id="sidebar-right" class="pull-right" style="width:25%"
