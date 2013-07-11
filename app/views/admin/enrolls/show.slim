@@ -3,6 +3,9 @@
   h4
     i.icon-list-alt
     span.text-info =t('system.enroll_info')
+    div class="pull-right"
+      i.icon-download-alt
+      = link_to "Download", admin_enroll_path(:format => 'xls')
   .widgetarea 
     table class="table table-hover table-bordered"
       thead

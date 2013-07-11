@@ -36,6 +36,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+gem "spreadsheet"
 gem "devise"
 gem "mongoid"
 gem "slim"
