@@ -4,5 +4,4 @@ class Customer
   field :username, type: String
   field :tel, type: String
 
-  
 end
