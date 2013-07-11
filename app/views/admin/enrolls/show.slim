@@ -10,7 +10,6 @@
           th 用户名
           th 邮箱
       tbody
-        - @enrolls.each do |enroll|
-          td = enroll.customer.email
-          td = 
+        - @enroll.customers.each do |customer|
+          td = customer.email
          
