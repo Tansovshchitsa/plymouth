@@ -8,7 +8,7 @@ module Admin
 
 		def show
 			@news = News.find(params[:id])
-			@enrolls = Enroll.where(news: @news)
+			@enroll = Enroll.where(news: @news).first
 			#render json: @enrolls
 			
 		end
