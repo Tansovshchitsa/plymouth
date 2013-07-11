@@ -9,7 +9,7 @@ module Admin
 		def show
 			@news = News.find(params[:id])
 			@enroll = Enroll.where(news: @news).first
-			#render json: @enrolls
+			#render json: @enroll
 			
 		end
 
