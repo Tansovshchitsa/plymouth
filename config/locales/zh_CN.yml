@@ -45,6 +45,10 @@ zh_CN:
         update: 更新
   simple_form:
     labels:
+      enroll:
+        email: 邮箱
+        username: 用户名
+        tel: 联系方式
       customer:
         email: 邮箱
         username: 用户名
