@@ -3,14 +3,14 @@ module Admin
 		load_and_authorize_resource
 
 		def index
-			@newss = News.where(applied: true)		 
+			@newss = News.where(applied: true)	
 		end
 
-		def create
+		def create		
 		end
 
 		def show
-			#@enroll = News.where(applied: true).enroll.find(params[:id])
+			@news = News.find_by_id(params[:news_id])
 		end
 
 		def update
