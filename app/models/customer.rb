@@ -4,4 +4,6 @@ class Customer
   field :username, type: String
   field :tel, type: String
 
+  belongs_to :enroll
+
 end
