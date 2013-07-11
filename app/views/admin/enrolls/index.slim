@@ -15,5 +15,5 @@
         - @newss.each_with_index do |news,index|
           tr
             td = index=index+1            
-            td = link_to news.title,admin_enroll_path(:news_id => news.id)
+            td = link_to news.title,admin_enroll_path(:id => news.id)
             td = news.created_at.strftime('%Y-%m-%d %H:%M:%S')
