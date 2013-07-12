@@ -8,6 +8,8 @@ class Type
   field :title
   field :value
 
+  validates_presence_of :title
+
   def self.tree
     nodes = node.nil? ? Type.roots : node.children.delete_if { |x| Unirole::Rank.leaf.include?(x.rank.id) }
     under = {}

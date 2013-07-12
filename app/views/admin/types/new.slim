@@ -1,4 +1,4 @@
-= simple_form_for @type,url: admin_types_path(@type) do |f|
+= simple_form_for @type,:validate => true,url: admin_types_path(@type) do |f|
   = f.input :title
   = f.input :ancestry do
     = f.select :ancestry, Type.roots.map { |r| [r.title, r.id] }, include_blank: true

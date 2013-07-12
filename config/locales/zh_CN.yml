@@ -12,6 +12,7 @@ zh_CN:
     enroll_info: 报名信息
     logout: 退出
     contact: 联系我们
+    type: 键值对管理
   devise:
     sessions:
       signed_in: "登录成功."
@@ -46,6 +47,9 @@ zh_CN:
         update: 更新
   simple_form:
     labels:
+      type:
+        title: 标题
+        ancestry: 父栏目
       contact:
         title: 标题
         content: 内容
@@ -105,6 +109,13 @@ zh_CN:
   mongoid:
     errors:
       models:
+        type:
+          attributes:
+            title:
+              blank: 必填项
+              presence: 必填项
+            ancestry:
+              invalid: 无效的选择
         contact:
           attributes:
             title:
