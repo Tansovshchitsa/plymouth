@@ -47,6 +47,10 @@ zh_CN:
         update: 更新
   simple_form:
     labels:
+      sns:
+        title: 标题
+        url: URL地址
+        image: 图标
       type:
         title: 标题
         ancestry: 父栏目
@@ -109,6 +113,17 @@ zh_CN:
   mongoid:
     errors:
       models:
+        sns:
+          attributes:
+            title:
+              blank: 必填项
+              presence: 必填项
+            url:
+              blank: 必填项
+              presence: 必填项
+            image:
+              blank: 必填项
+              presence: 必填项
         type:
           attributes:
             title:
