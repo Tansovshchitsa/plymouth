@@ -45,6 +45,10 @@ zh_CN:
         update: 更新
   simple_form:
     labels:
+      enroll:
+        email: 邮箱
+        username: 用户名
+        tel: 联系方式
       customer:
         email: 邮箱
         username: 用户名
@@ -97,6 +101,14 @@ zh_CN:
   mongoid:
     errors:
       models:
+        enroll:
+          attributes:
+            username:
+              blank: "用户名不能为空"
+            email:
+              blank: "邮箱不能为空"
+            tel:
+              blank: "联系方式不能为空"
         enterprise:
           attributes:
             name:
