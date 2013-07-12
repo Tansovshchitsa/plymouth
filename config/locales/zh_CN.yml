@@ -101,6 +101,14 @@ zh_CN:
   mongoid:
     errors:
       models:
+        news:
+          attributes:
+            title:
+              blank: 新闻标题不能为空
+              presence: 新闻标题不能为空
+            author:
+              blank: 作者不能为空
+              presence: 作者不能为空
         enroll:
           attributes:
             username:

@@ -14,6 +14,8 @@ class News
   belongs_to :type
   has_many :enrolls
 
+  validates_presence_of :title,:author
+
   state_machine :initial => :new do 
     event :pass do 
       transition [:new,:notpass] => :pass

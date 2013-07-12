@@ -12,7 +12,7 @@ class EnrollsController < ApplicationController
     if @enroll.save
       redirect_to news_path(@enroll.news), :notice => "报名成功！"
     else
-      redirect_to news_path(@enroll.news), :notice => "#{@enroll.errors[:email]} #{@enroll.errors[:username]} #{@enroll.errors[:tel]}"
+      redirect_to news_path(@enroll.news), :notice => "报名失败，请审核报名信息！"
     end
   end
 
