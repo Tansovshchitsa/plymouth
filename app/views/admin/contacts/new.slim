@@ -1,4 +1,4 @@
-= simple_form_for @contact,url: admin_contacts_path(@contact) do |f|
+= simple_form_for @contact,:validate => true,url: admin_contacts_path(@contact) do |f|
   = f.input :title
   = f.input :content
   = f.submit "提交"

@@ -11,6 +11,7 @@ zh_CN:
     enroll: 活动报名管理
     enroll_info: 报名信息
     logout: 退出
+    contact: 联系我们
   devise:
     sessions:
       signed_in: "登录成功."
@@ -45,6 +46,9 @@ zh_CN:
         update: 更新
   simple_form:
     labels:
+      contact:
+        title: 标题
+        content: 内容
       enroll:
         email: 邮箱
         username: 用户名
@@ -101,38 +105,46 @@ zh_CN:
   mongoid:
     errors:
       models:
+        contact:
+          attributes:
+            title:
+              blank: 必填项
+              presence: 必填项
+            content:
+              blank: 必填项
+              presence: 必填项
         link:
           attributes:
             title:
-              blank: 标题不能为空
-              presence: 标题不能为空
+              blank: 必填项
+              presence: 必填项
             url:
-              blank: URL不能为空
-              presence: URL不能为空
+              blank: 必填项
+              presence: 必填项
         announcement:
           attributes:
             author:
-              blank: 作者不能为空
-              presence: 作者不能为空
+              blank: 必填项
+              presence: 必填项
         news:
           attributes:
             title:
-              blank: 新闻标题不能为空
-              presence: 新闻标题不能为空
+              blank: 必填项
+              presence: 必填项
             author:
-              blank: 作者不能为空
-              presence: 作者不能为空
+              blank: 必填项
+              presence: 必填项
         enroll:
           attributes:
             username:
-              blank: 用户名不能为空
-              presence: 用户名不能为空
+              blank: 必填项
+              presence: 必填项
             email:
-              blank: 邮箱不能为空
-              presence: 邮箱不能为空
+              blank: 必填项
+              presence: 必填项
             tel:
-              blank: 联系方式不能为空
-              presence: 联系方式不能为空
+              blank: 必填项
+              presence: 必填项
         enterprise:
           attributes:
             name:

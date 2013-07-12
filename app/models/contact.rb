@@ -3,4 +3,7 @@ class Contact
 
   field :title
   field :content
+
+  validates_presence_of :title,:content
+  
 end
