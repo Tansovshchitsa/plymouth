@@ -17,6 +17,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :new,'文章管理',admin_newss_path
     primary.item :announcement, "通知", admin_announcements_path
     primary.item :articles,"基本管理" do |archive|
+      archive.item :enroll, "报名管理", admin_enrolls_path
       archive.item :focus,"焦点图",admin_focuss_path
       archive.item :logo, "LOGO", new_admin_logo_path
       archive.item :link, "友情链接", admin_links_path
