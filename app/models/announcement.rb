@@ -4,4 +4,6 @@ class Announcement
 
   field :content
   field :author
+
+  validates_presence_of :author
 end

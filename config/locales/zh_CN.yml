@@ -101,6 +101,19 @@ zh_CN:
   mongoid:
     errors:
       models:
+        link:
+          attributes:
+            title:
+              blank: 标题不能为空
+              presence: 标题不能为空
+            url:
+              blank: URL不能为空
+              presence: URL不能为空
+        announcement:
+          attributes:
+            author:
+              blank: 作者不能为空
+              presence: 作者不能为空
         news:
           attributes:
             title:
