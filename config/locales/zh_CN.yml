@@ -104,14 +104,11 @@ zh_CN:
         enroll:
           attributes:
             username:
-              blank: 用户名不能为空
-              presence: 用户名不能为空
+              blank: "用户名不能为空"
             email:
-              blank: 邮箱不能为空
-              presence: 邮箱不能为空
+              blank: "邮箱不能为空"
             tel:
-              blank: 联系方式不能为空
-              presence: 联系方式不能为空
+              blank: "联系方式不能为空"
         enterprise:
           attributes:
             name:
