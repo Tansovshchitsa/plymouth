@@ -2,7 +2,7 @@
 /   div class="top"
 /     div class="top_nav" style="padding-top: 30px;color: #ccc;font-size: 18px;"
 /       = render_navigation(:expand_all => true)
-div class="top_base"
+div class="top_base" style="background:url(#{Top.first.image.url}) repeat-x;"
   div class="top"
     / div class="top_logo"
     /   img src=Logo.first.image.url

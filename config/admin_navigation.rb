@@ -19,6 +19,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :articles,"基本管理" do |archive|
       archive.item :focus,"焦点图",admin_focuss_path
       archive.item :logo, "LOGO", new_admin_logo_path
+      archive.item :logo, "导航条背景", new_admin_top_path
       archive.item :sns,"SNS链接",admin_snss_path
       archive.item :link, "友情链接", admin_links_path
       archive.item :contact, '联系我们', admin_contacts_path

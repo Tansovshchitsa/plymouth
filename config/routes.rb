@@ -21,6 +21,7 @@ Plymouth::Application.routes.draw do
     resources :summarys
     resources :contacts
     resources :logos
+    resources :tops
     resources :newss do 
       member do 
         get "pass"

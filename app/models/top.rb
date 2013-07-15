@@ -1,4 +1,4 @@
-class Logo
+class Top
   include Mongoid::Document
   include Mongoid::Timestamps
   include Rails.application.routes.url_helpers
