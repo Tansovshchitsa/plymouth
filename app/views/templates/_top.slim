@@ -44,7 +44,7 @@ div class="top_base" style="background:url(#{Top.first.image.url}) repeat-x;"
             a href="#" 关于学联
           span
             - Type.where(title: "关于学联").first.children.each do |children|
-              = link_to children.title, newss_path(:type_id => children.id)
+              = link_to children.title, summarys_path(:type_id => children.id)
 
       div class="nav" style="margin-bottom: 0px;"
         div
