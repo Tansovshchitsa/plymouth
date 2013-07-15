@@ -10,7 +10,7 @@ div class="top_base"
       div class="nav" style="margin-bottom: 0px;"
         div
           p
-            a href="#" 首页
+            a href=root_path 首页
       div class="nav" style="margin-bottom: 0px;"
         div
           p
@@ -50,3 +50,10 @@ div class="top_base"
         div
           p
             a href="#" 合作赞助
+
+div class="banner_logo"
+  div style="padding-top: 20px;padding-bottom: 20px; float: right;"
+    - Sns.all.each do |sns|          
+      a href=sns.url target="_blank"
+        div id="icon-facebook" class="sns-icon" data-toggle="tooltip" title="" data-original-title="Facebook" style="margin-right: 20px;"
+          img src=sns.image.url style="height: 40px;"
