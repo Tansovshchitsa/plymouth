@@ -31,13 +31,16 @@ body{
 
 .top_logo{
 	/*width:300px;*/
-	height:90px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height:80px;
 	float:left;
 }
 
 .top_logo img{
-	width: 204px;
-	height: 90px;
+	width: 181px;
+	height: 80px;
+	border:0px;
 }
 
 .top_nav{
@@ -47,6 +50,8 @@ body{
 	height:70px;
 	float:left;
 }
+
+
 
 
 
