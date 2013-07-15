@@ -222,3 +222,74 @@ body{
 .sns-icon img {
 	-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, color-stop(30%,rgba(255, 255, 255, 0.0)), color-stop(80%,rgba(255, 255, 255, 0.1)), color-stop(100%,rgba(255, 255, 255, .3)));
 }
+
+
+
+.nav div{
+width:120px;
+height:65px;
+float:left;
+font-size:16px;
+}
+
+.nav div p{
+width:120px;
+height:65px;
+float:left;
+padding:0px;
+margin:0px;
+}
+
+.nav div p a{
+width:120px;
+height:65px;
+float:left;
+line-height:65px;
+text-decoration:none;
+color:#666666;
+text-align:center;
+}
+
+
+.nav div p a:hover{
+color:#FFFFFF;
+}
+
+.nav div span{
+z-index:1000;
+height:auto;
+width:120px;
+line-height:30px;
+float:left;
+position:relative;
+display:none;
+background:#FFF;
+width:auto;
+}
+.nav div:hover{
+border-bottom:#ed1556 5px solid;
+}
+
+
+.nav div:hover span{
+border-top:#ed1556 5px solid;
+display:block;
+}
+
+
+
+.nav div span a{
+width:120px;
+height:30px;
+line-height:30px;
+text-decoration:none;
+float:left;
+color:#666;
+font-size:12px;
+text-align:center;
+}
+
+.nav div span a:hover{
+color:#222;
+background:#ddd;
+}
