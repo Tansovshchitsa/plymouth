@@ -171,6 +171,10 @@ zh_CN:
             tel:
               blank: 必填项
               presence: 必填项
+            email:
+              blank: "邮箱不能为空"
+            tel:
+              blank: "联系方式不能为空"
         enterprise:
           attributes:
             name:
