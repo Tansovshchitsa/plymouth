@@ -9,13 +9,12 @@ body{
 	background:url(/assets/bk_body.jpg) repeat;
 }
 
-
-.top_base{
+/*.top_base{
 	width:100%;
 	height:90px;
 	float:left;
-	background:url(/assets/bk_main_wrapper_home.png) repeat-x;
-}
+	background:#000000;
+}*/
 
 
 .top{
@@ -31,17 +30,28 @@ body{
 
 .top_logo{
 	/*width:300px;*/
-	height:90px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height:80px;
 	float:left;
 }
 
-/*.top_logo img{
-	width: 204px;
-	height: 90px;
-}*/
+.top_logo img{
+	width: 181px;
+	height: 80px;
+	border:0px;
+}
+
+.top_base{
+	width:100%;
+	height:90px;
+	float:left;
+	background:url(/assets/bk_main_wrapper_home.png) repeat-x;
+}
 
 .top_nav{
-	width:660px;
+	/*width:660px;*/
+	width:720px;
 	padding-top: 20px;
 	padding-left: 50px;
 	height:70px;
@@ -221,40 +231,6 @@ body{
 }
 .sns-icon img {
 	-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, color-stop(30%,rgba(255, 255, 255, 0.0)), color-stop(80%,rgba(255, 255, 255, 0.1)), color-stop(100%,rgba(255, 255, 255, .3)));
-}
-
-
-.top_base{
-	width:100%;
-	height:90px;
-	float:left;
-	background:#000000;
-}
-
-
-.top{
-	width:960px;
-	height:100%;
-	margin:0px auto;
-	
-}
-
-.top a{
-	color: #ccc;
-}
-
-.top_logo{
-	/*width:300px;*/
-	padding-top: 5px;
-	padding-bottom: 5px;
-	height:80px;
-	float:left;
-}
-
-.top_logo img{
-	width: 181px;
-	height: 80px;
-	border:0px;
 }
 
 
