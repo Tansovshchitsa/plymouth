@@ -16,26 +16,37 @@ div class="top_base"
           p
             a href="#" 学联新闻
           span
-            a href="#" nav1
-            a href="#" nav2
+            - Type.where(title: "学联新闻").first.children.each do |children|
+              = link_to children.title, newss_path(:type_id => children.id)
+
       div class="nav" style="margin-bottom: 0px;"
         div
           p
-            a href="#" 学联新闻
+            a href="#" 学联活动
           span
-            a href="#" nav1
-            a href="#" nav2
+            - Type.where(title: "学联活动").first.children.each do |children|
+              = link_to children.title, newss_path(:type_id => children.id)
+
       div class="nav" style="margin-bottom: 0px;"
         div
           p
-            a href="#" 学联新闻
+            a href="#" 学联服务
           span
-            a href="#" nav1
-            a href="#" nav2
+            - Type.where(title: "学联服务").first.children.each do |children|
+              = link_to children.title, newss_path(:type_id => children.id)
       div class="nav" style="margin-bottom: 0px;"
         div
           p
-            a href="#" 学联新闻
+            a href="http://www.plymouthcssa.org/bbs/forum.php" 学联论坛      
+      div class="nav" style="margin-bottom: 0px;"
+        div
+          p
+            a href="#" 关于学联
           span
-            a href="#" nav1
-            a href="#" nav2
+            - Type.where(title: "关于学联").first.children.each do |children|
+              = link_to children.title, newss_path(:type_id => children.id)
+
+      div class="nav" style="margin-bottom: 0px;"
+        div
+          p
+            a href="#" 合作赞助
