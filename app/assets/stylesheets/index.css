@@ -49,6 +49,14 @@ body{
 	background:url(/assets/bk_main_wrapper_home.png) repeat-x;
 }
 
+
+.nav_div {
+  margin-left: 0;
+  margin-bottom: 20px;
+  width: 120px;
+  list-style: none;
+}
+
 .top_nav{
 	/*width:660px;*/
 	width:720px;
