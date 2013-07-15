@@ -32,13 +32,13 @@ body{
 	/*width:300px;*/
 	padding-top: 5px;
 	padding-bottom: 5px;
-	height:80px;
+	/*height:80px;*/
 	float:left;
 }
 
 .top_logo img{
-	width: 181px;
-	height: 80px;
+	width: 222px;
+	/*height: 80px;*/
 	border:0px;
 }
 
@@ -47,7 +47,7 @@ body{
 	height:90px;
 	float:left;
 	background:url(/assets/bk_main_wrapper_home.png) repeat-x;
-}
+}	
 
 
 .nav_div {
@@ -61,7 +61,7 @@ body{
 	/*width:660px;*/
 	width:720px;
 	padding-top: 20px;
-	padding-left: 50px;
+	/*padding-left: 50px;*/
 	height:70px;
 	float:left;
 }

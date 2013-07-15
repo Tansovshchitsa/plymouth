@@ -4,8 +4,8 @@
 /       = render_navigation(:expand_all => true)
 div class="top_base"
   div class="top"
-    div class="top_logo"
-      img src=Logo.first.image.url
+    / div class="top_logo"
+    /   img src=Logo.first.image.url
     div class="top_nav"
       div class="nav" style="margin-bottom: 0px;"
         div
@@ -52,6 +52,8 @@ div class="top_base"
             a href="#" 合作赞助
 
 div class="banner_logo"
+  div class="top_logo"
+    img src=Logo.first.image.url style="width:200px;"
   div style="padding-top: 20px;padding-bottom: 20px; float: right;"
     - Sns.all.each do |sns|          
       a href=sns.url target="_blank"
