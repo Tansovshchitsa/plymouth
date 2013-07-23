@@ -10,7 +10,7 @@ div class="banner_logo"
       a href=sns.url target="_blank"
         div id="icon-facebook" class="sns-icon" data-toggle="tooltip" title="" data-original-title="Facebook" style="margin-right: 20px;"
           img src=sns.image.url style="height: 45px;"
-- if Top.first.color.to_s.empyt?
+- if Top.first.color.to_s.empty?
   div class="top_base"  style="background:url(#{Top.first.image.url}) repeat-x;"
     div class="top"
       / div class="top_logo"
