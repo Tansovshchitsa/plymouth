@@ -5,5 +5,6 @@ class Top
 
   field :image
   field :type
+  field :color
   mount_uploader :image, FocusUploader
 end

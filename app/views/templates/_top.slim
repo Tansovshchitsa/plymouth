@@ -2,7 +2,65 @@
 /   div class="top"
 /     div class="top_nav" style="padding-top: 30px;color: #ccc;font-size: 18px;"
 /       = render_navigation(:expand_all => true)
-div class="top_base" style="background:url(#{Top.first.image.url}) repeat-x;"
+div class="banner_logo"
+  div class="top_logo"
+    img src=Logo.first.image.url
+  div style="padding-top: 40px;padding-bottom: 20px; float: right;"
+    - Sns.all.each do |sns|          
+      a href=sns.url target="_blank"
+        div id="icon-facebook" class="sns-icon" data-toggle="tooltip" title="" data-original-title="Facebook" style="margin-right: 20px;"
+          img src=sns.image.url style="height: 45px;"
+- if Top.first.color.to_s.empyt?
+  div class="top_base"  style="background:url(#{Top.first.image.url}) repeat-x;"
+    div class="top"
+      / div class="top_logo"
+      /   img src=Logo.first.image.url
+      div class="top_nav"
+        div class="nav" style="margin-bottom: 0px;"
+          div
+            p
+              a href=root_path 首页
+        div class="nav" style="margin-bottom: 0px;"
+          div
+            p
+              a href="#" 学联新闻
+            span
+              - Type.where(title: "学联新闻").first.children.each do |children|
+                = link_to children.title, newss_path(:type_id => children.id)
+
+        div class="nav" style="margin-bottom: 0px;"
+          div
+            p
+              a href="#" 学联活动
+            span
+              - Type.where(title: "学联活动").first.children.each do |children|
+                = link_to children.title, newss_path(:type_id => children.id)
+
+        div class="nav" style="margin-bottom: 0px;"
+          div
+            p
+              a href="#" 学联服务
+            span
+              - Type.where(title: "学联服务").first.children.each do |children|
+                = link_to children.title, newss_path(:type_id => children.id)
+        div class="nav" style="margin-bottom: 0px;"
+          div
+            p
+              a href="http://www.plymouthcssa.org/bbs/forum.php" 学联论坛      
+        div class="nav" style="margin-bottom: 0px;"
+          div
+            p
+              a href="#" 关于学联
+            span
+              - Type.where(title: "关于学联").first.children.each do |children|
+                = link_to children.title, summarys_path(:type_id => children.id)
+
+        div class="nav" style="margin-bottom: 0px;"
+          div
+            p
+              a href="#" 合作赞助
+- else
+  div class="top_base"  style="background:#{Top.first.color};"
   div class="top"
     / div class="top_logo"
     /   img src=Logo.first.image.url
@@ -50,12 +108,3 @@ div class="top_base" style="background:url(#{Top.first.image.url}) repeat-x;"
         div
           p
             a href="#" 合作赞助
-
-div class="banner_logo"
-  div class="top_logo"
-    img src=Logo.first.image.url
-  div style="padding-top: 40px;padding-bottom: 20px; float: right;"
-    - Sns.all.each do |sns|          
-      a href=sns.url target="_blank"
-        div id="icon-facebook" class="sns-icon" data-toggle="tooltip" title="" data-original-title="Facebook" style="margin-right: 20px;"
-          img src=sns.image.url style="height: 45px;"
