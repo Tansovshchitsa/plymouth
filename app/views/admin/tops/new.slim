@@ -1,0 +1,7 @@
+= simple_form_for @top,url: admin_tops_path(@top), method: "post" do |f|
+  - if @top.image
+    a target="_blank" href=@top.image.url
+      img src=@top.image.url style="height:60px;"
+  = f.input :image, as: :file
+  = f.input :color
+  = f.submit "提交"

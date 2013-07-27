@@ -1,0 +1,15 @@
+= simple_form_for @logo,url: admin_logos_path(@logo), method: "post" do |f|
+  - if @logo.image
+    a target="_blank" href=@logo.image.url
+      img src=@logo.image.url style="height:60px;"
+  .control-group
+    label.control-label 类别
+    .controls
+      input type="hidden" name="logo[type]" id="logo_type"
+  = f.input :image, as: :file
+  = f.submit "提交"
+  
+javascript:
+  $.getJSON("/admin/types/get_type",function(data){
+    $('#news_type').optionTree(data,{choose: "请选择"});
+  });

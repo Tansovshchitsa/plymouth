@@ -1,0 +1,32 @@
+div class="content_base"
+  div class="content"
+    div class="sub_content"
+      div class="sub_address"
+        span 
+          = @type.nil? ? "最新动态" : @type.title
+        ul class="breadcrumb pull-right" style="background: none;"
+          li
+            i class="icon-home"
+            a href="#" 首页 
+            |/
+            - if @type and @type.parent
+              li = @type.parent.title
+              |/  
+            li class="active"
+              = @type.nil? ? "最新动态" : @type.title
+      div class="sub_page"
+        div class="news_list"
+          ul
+            - @newss.each do |news|
+              li
+                span
+                  span
+                    a href=news_path(news)
+                      = news.title
+                  div
+                    font 
+                      = news.created_at.strftime('%Y-%m-%d %H:%M:%S')
+                div
+                  = news.thumb.to_s.html_safe
+    div style="padding-top: 30px;"
+      =will_paginate @newss,:theme => 'default'

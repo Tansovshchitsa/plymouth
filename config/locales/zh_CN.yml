@@ -1,0 +1,232 @@
+zh_CN:
+  system:
+    name: 普利茅斯中国学联
+    title: 普利茅斯中国学联
+    admin_title: 普利茅斯中国学联-后台管理
+    announcement: 通知
+    focus: 焦点图管理
+    link: 友情链接
+    new: 新闻管理
+    customer: 会员管理
+    enroll: 活动报名管理
+    enroll_info: 报名信息
+    logout: 退出
+    contact: 联系我们
+    type: 键值对管理
+  devise:
+    sessions:
+      signed_in: "登录成功."
+      signed_out: "退出成功."
+  state:
+    new: 新建
+    pass: 审核通过
+    notpass: 审核未通过 
+    offline: 下线
+    online: 上线
+  controllers:
+    dashboard:
+      actions:
+        index: 我的工作台
+    customfield:
+      actions:
+        new: 新建
+  will_paginate:
+    previous_label: 上一页
+    next_label: 下一页
+    pagination:
+      truncate: "..."
+      next: 下一页
+      last: 末尾
+      first: 首页
+      previous: 上一页
+  helpers:
+    submit:
+      enterprises:
+        create: 创建
+        edit: 更新
+        update: 更新
+  simple_form:
+    labels:
+      sns:
+        title: 标题
+        url: URL地址
+        image: 图标
+      type:
+        title: 标题
+        ancestry: 父栏目
+      contact:
+        title: 标题
+        content: 内容
+      enroll:
+        email: 邮箱
+        username: 用户名
+        tel: 联系方式
+      customer:
+        email: 邮箱
+        username: 用户名
+        tel: 联系方式
+      user:
+        tel: 电话
+        id_card: 身份证
+        old_password: 旧密码
+        login: 用户名
+        username: 用户名
+        password: 密码
+        password_confirmation: 确认密码
+        mail: 联系邮箱
+        mobile: 手机
+        submit: 保存
+      focus:
+        title: 标题
+        url: 跳转URL
+        image: 焦点图
+      news:
+        title: 新闻标题
+        focus: 是否带缩略图
+        image: 缩略图
+        thumb: 摘要新闻
+        content: 新闻内容
+        author: 作者
+        applied: 是否需要报名
+      link:
+        title: 标题
+        type: 链接类型
+        url: 跳转URL
+      announcement:
+        content: 通知内容
+        author: 作者
+    hints:
+      user:
+        login: 6位以上英文字母，请勿使用中文
+        password: 密码至少6位字符
+        password_confirmation: 请输入确认密码
+    placeholders:
+      user:
+        mail: 邮箱格式 如:example@163.com
+  ckeditor:
+    page_title: "CKEditor 文件管理"
+    confirm_delete: "删除文件？"
+    buttons:
+      cancel: "Cancel"
+      upload: "上传"
+      delete: "删除"
+  mongoid:
+    errors:
+      models:
+        sns:
+          attributes:
+            title:
+              blank: 必填项
+              presence: 必填项
+            url:
+              blank: 必填项
+              presence: 必填项
+            image:
+              blank: 必填项
+              presence: 必填项
+        type:
+          attributes:
+            title:
+              blank: 必填项
+              presence: 必填项
+            ancestry:
+              invalid: 无效的选择
+        contact:
+          attributes:
+            title:
+              blank: 必填项
+              presence: 必填项
+            content:
+              blank: 必填项
+              presence: 必填项
+        link:
+          attributes:
+            title:
+              blank: 必填项
+              presence: 必填项
+            url:
+              blank: 必填项
+              presence: 必填项
+        announcement:
+          attributes:
+            author:
+              blank: 必填项
+              presence: 必填项
+        news:
+          attributes:
+            title:
+              blank: 必填项
+              presence: 必填项
+            author:
+              blank: 必填项
+              presence: 必填项
+        enroll:
+          attributes:
+            username:
+              blank: 必填项
+              presence: 必填项
+            email:
+              blank: 必填项
+              presence: 必填项
+            tel:
+              blank: 必填项
+              presence: 必填项
+            tel:
+              blank: "联系方式不能为空"
+        enterprise:
+          attributes:
+            name:
+              blank: "不能为空"
+              taken: "该企业已经注册"
+            buiness_code:
+              blank: "不能为空"
+            buiness_capital:
+              blank: "不能为空"
+              not_a_number: "此项必须为数字"
+            buiness_create_date:
+              blank: "不能为空"
+            office_address:
+              blank: "不能为空"
+            office_postal_code:
+              blank: "不能为空"
+              not_a_number: "此项必须为数字"
+            office_phone:
+              blank: "不能为空"
+            office_fax:
+              blank: "不能为空"
+            legal_name:
+              blank: "不能为空"
+            legal_idcard:
+              blank: "不能为空"
+            legal_phone:
+              blank: "不能为空"
+              not_a_number: "此项必须为数字"
+            legal_email:
+              blank: "不能为空"
+        user:
+          attributes:
+            mobile:
+              blank: 必填项
+              invalid: 格式不正确
+            tel:
+              blank: 必填项
+              invalid: 格式不正确
+            id_card:
+              invalid: 格式不正确
+            login:
+              invalid: 请填写正确的格式
+            email:
+              blank: 必填项
+              invalid: 请填写正确的邮箱格式 如： example@163.com
+              taken: 此邮箱已经被注册了
+            password:
+              blank: 必填项
+              confirmation: 确认密码与密码输入不一致
+            password_confirmation:
+              blank: 必填项
+        article:
+          attributes:
+            name:
+              blank: 名称不能为空
+            content:
+              blank: 附件不能为空

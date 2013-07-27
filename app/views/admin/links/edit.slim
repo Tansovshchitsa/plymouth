@@ -1,0 +1,6 @@
+= simple_form_for @link,url: admin_link_path(@link) do |f|
+  = f.input :title
+  = f.input :type do 
+    = f.select :type, ['友情链接','关于学联'] { |r| [r, r.index] }
+  = f.input :url
+  = f.submit "更新"

@@ -1,0 +1,4 @@
+= simple_form_for @announcement,url: admin_announcement_path(@announcement) do |f|
+  = f.input :content, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} }
+  = f.input :author
+  = f.submit "更新"

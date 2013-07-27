@@ -1,0 +1,32 @@
+doctype 5
+
+html
+  head
+    meta charset='utf-8'
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    title= t('system.admin_title')
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tag
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          .span11.pull-left
+            span.brand.pull-left
+              i.icon-home
+              a href=main_app.root_path title="回首页"
+                strong.text-info=t('system.admin_title')
+            span.divider-vertical.pull-left
+            = render_navigation(:context => :admin,:expand_all => true)
+          .span1.pull-right
+
+    .container style="margin-top:60px;"
+      #working-area.container-fluid
+        #screen-full.row-fluid
+          = yield
+      .footer
+        p.pull-right
+          a href="#" 回到顶端
+        p
+          |普利茅斯中国学联 | &copy; 2013 

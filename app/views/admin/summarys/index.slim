@@ -1,0 +1,21 @@
+= render_cell 'messages', :index, :message=>flash[:notice]
+.widget
+  h4
+    i.icon-list-alt
+    span.text-info =t('system.link')
+  .widgetarea 
+    table class="table table-hover table-bordered"
+      thead
+        tr
+          th.index_number 序号
+          th 标题
+      tbody
+        - @summarys.each_with_index do |summary,index|
+          tr
+            td = index=index+1
+            td = summary.type.title
+            td 
+              = link_to "编辑", edit_admin_summary_path(summary)
+              ||
+              = link_to "删除", admin_summary_path(summary) , method: :delete, data: { confirm: '确定此操作吗？' }
+=will_paginate @summarys,:theme => 'default'

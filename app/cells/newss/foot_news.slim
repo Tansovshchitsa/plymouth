@@ -1,0 +1,5 @@
+ul class="menu"
+  - @newss.each do |news|
+    li class="item-102"
+      a class="nofollow" href=news_path(news)
+        = news.title

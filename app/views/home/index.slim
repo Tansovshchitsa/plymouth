@@ -1,0 +1,58 @@
+javascript:
+  //设置
+  myFocus.set({
+    id:'myFocus',//ID
+    pattern:'mF_expo2010'//风格
+  });
+
+/ div class="banner_logo"
+/   / div class="top_logo"
+/   /   img src=Logo.first.image.url style="height:60px;width:300px;"
+/   div style="padding-top: 20px;padding-bottom: 20px; float: right;"
+/     - Sns.all.each do |sns|          
+/       a href=sns.url target="_blank"
+/         div id="icon-facebook" class="sns-icon" data-toggle="tooltip" title="" data-original-title="Facebook" style="margin-right: 20px;"
+/           img src=sns.image.url style="height: 40px;"
+div class="banner_base"
+  div class="banner"
+    = render_cell "focuss", :index
+  / div class="banner_line_base"
+  /   div class="banner_line"
+  div class="main_base"
+    div class="main"
+      div class="main_about"
+        div class="main_title"
+          span Introduction
+          a href="#"
+            p 普利茅斯简介
+        div class="main_about_content"
+          p
+            = render_cell 'summarys', :index
+        div class="main_linkmore"
+          img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
+          a href=summarys_path(:type_id => Type.where(title: "普利茅斯简介").first) 详情
+      div class="main_news"
+        div class="main_title"
+          span News
+          a href="#"
+            p 最新动态
+
+        = render_cell "newss", :home_news_focus
+        = render_cell "newss", :home_news_list
+
+        div class="main_linkmore"
+          img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
+          =link_to "更多", newss_path
+
+      div class="main_others"
+        div class="main_title"
+          span Notification
+          a href="#"
+            p 通知公告
+
+        div class="main_not"
+          = @announcement.content.html_safe if @announcement
+        
+        div class="main_linkmore"
+          img src=asset_path("illustration/link_icon.jpg") width="9" height="9" 
+          a href=announcements_path >历史记录

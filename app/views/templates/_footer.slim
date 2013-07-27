@@ -1,0 +1,22 @@
+div id="link" class="main_base" style="background-color: #333333;"
+  div class="container" style="padding-left: 110px;"
+    div class="moduletable span3"
+      h4 class="" 最新动态
+      = render_cell "newss",:foot_news
+    div class="moduletable span3"
+      h4 class="" 友情链接
+      = render_cell "links",:index
+    div class="moduletable" style="width: 100px;float: left;"
+      h4 class="" 关于学联
+      = render_cell "links",:about
+    div class="moduletable span3"
+      h4 class="" 联系我们
+      ul class="menu"
+        - Contact.all.each do |contact|
+          li class="item-102"
+            p 
+              = contact.title.to_s.html_safe
+              = contact.content.to_s.html_safe
+div class="bottom_base"
+    div class="bottom" 
+      |版权所有 © 普利茅斯中国学联 All Rights Reserved

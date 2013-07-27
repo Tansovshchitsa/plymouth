@@ -1,0 +1,8 @@
+= simple_form_for @summary, url: admin_summary_path(@summary) do |f|
+  .control-group
+    label.control-label 类别
+    .controls
+      input type="text" readonly="true" name="summary[type_id]" id="news_type" value=@summary.type.title
+  = f.input :thumb,as: :text, :input_html => { :rows => 5 ,:style => "width:98%;"}
+  = f.input :content, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} }
+  = f.submit "保存"

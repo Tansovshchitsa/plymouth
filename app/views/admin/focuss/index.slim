@@ -1,0 +1,35 @@
+= render_cell 'messages', :index, :message=>flash[:notice]
+.widget
+  h4
+    i.icon-list-alt
+    span.text-info =t('system.focus')
+    = link_to "添加焦点图",new_admin_focus_path, class: "pull-right"
+  .widgetarea 
+    table class="table table-hover table-bordered"
+      thead
+        tr
+          th.index_number 序号
+          th 标题
+          th 预览
+          th 状态
+          th 跳转URL
+      tbody
+        - @focuss.each_with_index do |focus,index|
+          tr
+            td = index=index+1
+            td = link_to focus.title, focus.url
+            td 
+              a target="_blank" href=focus.image.url
+                img src=focus.image.thumb.url
+            td = t("state.#{focus.state}")
+            td = focus.url
+            td 
+              - if focus.is_online?
+                = link_to "下线", offline_admin_focus_path(focus)
+              - else
+                = link_to "上线", online_admin_focus_path(focus)
+              ||
+              = link_to "编辑", edit_admin_focus_path(focus)
+              ||
+              = link_to "删除", admin_focus_path(focus) , method: :delete, data: { confirm: '确定此操作吗？' }
+=will_paginate @focuss,:theme => 'default'

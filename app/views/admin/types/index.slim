@@ -1,0 +1,24 @@
+= render_cell 'messages', :index, :message=>flash[:notice]
+.widget
+  h4
+    i.icon-list-alt
+    span.text-info =t('system.type')
+    = link_to "添加键值对",new_admin_type_path, class: "pull-right"
+  .widgetarea 
+    table class="table table-hover table-bordered"
+      thead
+        tr
+          th.index_number 序号
+          th 标题
+          th 父栏目
+      tbody
+        - @types.each_with_index do |type,index|
+          tr
+            td = index=index+1
+            td = type.title
+            td = type.parent.nil? ? "" : type.parent.title
+            td 
+              = link_to "编辑", edit_admin_type_path(type)
+              ||
+              = link_to "删除", admin_type_path(type) , method: :delete, data: { confirm: '确定此操作吗？' }
+=will_paginate @types,:theme => 'default'

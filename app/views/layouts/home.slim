@@ -1,0 +1,30 @@
+doctype 5
+
+html lang="en"
+  head
+    meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    title= t('system.title')
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+    script type="text/javascript" src="/javascripts/jsdate/WdatePicker.js"
+    /[if lt IE 9]
+      script src="/assets/html5.js" type="text/javascript"
+    /[if lt IE 7]
+      link href="/assets/bootstrap-ie7.css"  rel="stylesheet" type="text/css"
+    /[if lt IE 6]
+      link href="/assets/bootstrap-ie6.css"  rel="stylesheet" type="text/css"
+    = csrf_meta_tag
+  body#body
+    = render "templates/top"
+    = yield
+    = render "templates/share"
+    = render "templates/footer"  
+  javascript:
+    $("div.accordion-body ul li a").each(function(){
+       if  ($(this).attr("href") == "#{request.fullpath}"){
+        $("div.accordion-body").removeClass("in");
+        $(this).parent("li").parent("ul").parent("div.accordion-body").addClass("in");
+      }
+    })
