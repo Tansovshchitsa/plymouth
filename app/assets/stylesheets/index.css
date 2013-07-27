@@ -24,10 +24,6 @@ body{
 	
 }
 
-.top a{
-	color: #ccc;
-}
-
 .top_logo{
 	/*width:300px;*/
 	padding-top: 5px;
@@ -266,7 +262,6 @@ body{
 
 .green:hover{
 	background: #3ac8bb;
-	color: white;
 }
 
 .pink a{
@@ -363,24 +358,31 @@ text-align:center;
 
 
 .nav div p a:hover{
-color: white;
+	color: white;
+}
+
+.nav div:hover{
+	
 }
 
 .nav div span{
-z-index:1000;
-height:auto;
-width:102px;
-line-height:30px;
-float:left;
-position:relative;
-display:none;
-background:#FFF;
-width:auto;
+	z-index:1000;
+	height:auto;
+	width:102px;
+	line-height:30px;
+	float:left;
+	position:relative;
+	display:none;
+	background:#FFF;
+	width:auto;
 }
 .nav div:hover{
-/*border-bottom:#ed1556 5px solid;*/
+	color: white;
 }
 
+.nav div:hover p a {
+	color: white;	
+}
 
 .nav div:hover span{
 /*border-top:#ed1556 5px solid;*/
@@ -390,17 +392,17 @@ display:block;
 
 
 .nav div span a{
-width:102px;
-height:30px;
-line-height:30px;
-text-decoration:none;
-float:left;
-color: white;
-font-size:12px;
-text-align:center;
+	width:102px;
+	height:30px;
+	line-height:30px;
+	text-decoration:none;
+	float:left;
+	color: white;
+	font-size:12px;
+	text-align:center;
 }
 
 .nav div span a:hover{
-color:#222;
-background:#ddd;
+	color:#222;
+	background:#ddd;
 }
