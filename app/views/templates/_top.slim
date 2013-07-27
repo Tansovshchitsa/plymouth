@@ -73,8 +73,10 @@ div class="banner_logo"
                       = menu["name"]
                 - else
                   p
-                    a href="#" 
+                    a href="#"
                       = menu["name"]
                   span
+                    - @color = menu["color"]
                     - Type.where(title: menu["name"].to_s).first.children.each do |children|
-                      = link_to children.title, newss_path(:type_id => children.id)
+                      - colors = Settings.color.split(",").delete_if {|e| e == @color }
+                      = link_to children.title, newss_path(:type_id => children.id), style: "background:#{@color = colors.shuffle.first};"

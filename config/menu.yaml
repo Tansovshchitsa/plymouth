@@ -2,22 +2,29 @@
   name: 首页
   url: "/"
   class: darkgreen
+  color: '#007565'
 -
   name: 学联新闻
   class: green
+  color: '#3ac8bb'  
 -
   name: 学联活动
   class: pink
+  color: '#e7417b'
 -
   name: 学联服务
   class: purple
+  color: '#a747a6'
 -
   name: 学联论坛
   class: lightbule
+  color: '#00c8dc'
   url: "http://bbs.plymouthcssa.org"
 -
   name: 关于学联
   class: bule
+  color: '#0086b4'
 -
   name: 合作赞助
   class: volgreen
+  color: '#7fd183'
