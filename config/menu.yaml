@@ -28,3 +28,7 @@
   name: 合作赞助
   class: volgreen
   color: '#7fd183'
+- 
+  name: 联系我们
+  class: beige
+  color: '#b5ac64'
