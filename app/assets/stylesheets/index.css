@@ -245,10 +245,26 @@ body{
 
 
 .nav div{
-width:102px;
-/*height:65px;*/
-float:left;
-font-size:16px;
+	width:102px;
+	/*height:65px;*/
+	float:left;
+	font-size:16px;
+}
+
+.darkgreen a{
+	color: #007565;
+}
+
+.darkgreen:hover {
+	background-color: #007565;
+}
+
+.green a{
+	color: #3ac8bb;
+}
+
+.green:hover{
+	background: #3ac8bb;
 }
 
 .nav div p{
@@ -265,13 +281,13 @@ width:102px;
 float:left;
 line-height:45px;
 text-decoration:none;
-color:#666666;
+/*color:#666666;*/
 text-align:center;
 }
 
 
 .nav div p a:hover{
-color:#FFFFFF;
+color: white;
 }
 
 .nav div span{

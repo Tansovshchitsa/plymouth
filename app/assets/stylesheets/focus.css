@@ -1,7 +1,7 @@
 /*焦点图*/
 #myFocus{
   width:960px;
-  height:350px;
+  height:400px;
 }
 
 .focus{
@@ -20,5 +20,5 @@
 
 .focus li img{
   width: 960px;
-  height:350px;
+  height:400px;
 }
