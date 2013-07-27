@@ -11,7 +11,6 @@ class Enroll
 
   validates :email, presence: true, format: { with: /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/,
     message: "邮箱格式不正确" }
-  validates :username, presence: true, length: { minimum: 4 , message: "用户名长度不小于4个字符"}
-  validates :tel, presence: true, format: { with: /^1[3|4|5|8]\d{9}$/, 
-    message: "联系方式格式不正确"}  
+  validates :username, presence: true, length: { minimum: 2 , message: "用户名长度不小于2个字符"}
+  validates :tel, presence: true
 end

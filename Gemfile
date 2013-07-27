@@ -53,6 +53,8 @@ gem 'rack-gridfs', :require => 'rack/gridfs'
 
 gem 'simple-navigation'
 gem 'simple-navigation-bootstrap'
+gem 'client_side_validations'
+gem 'client_side_validations-simple_form'
 gem "zhiyi-bootstrap-rails", :require => "bootstrap-rails", :git => "git@github.com:zhiyisoft/bootstrap-rails.git", :ref => "HEAD"
 gem "simple_form"
 gem "mongoid"

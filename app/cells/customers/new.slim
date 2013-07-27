@@ -1,4 +1,4 @@
-= simple_form_for @enroll do |f|
+= simple_form_for @enroll,:validate => true do |f|
   = f.input :news_id ,as: "hidden", :input_html => {value: @news.id}
   = f.input :email, :required => false, :autofocus => true
   = f.input :username
