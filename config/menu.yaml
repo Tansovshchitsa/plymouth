@@ -1,0 +1,23 @@
+-
+  name: 首页
+  url: "/"
+  class: darkgreen
+-
+  name: 学联新闻
+  class: green
+-
+  name: 学联活动
+  class: pink
+-
+  name: 学联服务
+  class: purple
+-
+  name: 学联论坛
+  class: lightbule
+  url: "http://bbs.plymouthcssa.org"
+-
+  name: 关于学联
+  class: bule
+-
+  name: 合作赞助
+  class: volgreen
