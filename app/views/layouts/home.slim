@@ -8,13 +8,6 @@ html lang="en"
     title= t('system.title')
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'application'
-    script type="text/javascript" src="/javascripts/jsdate/WdatePicker.js"
-    /[if lt IE 9]
-      script src="/assets/html5.js" type="text/javascript"
-    /[if lt IE 7]
-      link href="/assets/bootstrap-ie7.css"  rel="stylesheet" type="text/css"
-    /[if lt IE 6]
-      link href="/assets/bootstrap-ie6.css"  rel="stylesheet" type="text/css"
     = csrf_meta_tag
   body#body
     = render "templates/top"

@@ -1,9 +1,12 @@
-div id="myFocus"
-  / <!--焦点图盒子-->
-  div class="pic"
-    / <!--图片列表-->
-    ul class="focus"
-      - @focuss.each do |focus|
-        li
-          a href=focus.url
-            img src=focus.image.url thumb="" text=focus.title
+div id="myCarousel" class="carousel slide"
+  ol class="carousel-indicators"
+    - @focuss.each_with_index do |focus,index|
+      li data-target="#myCarousel" data-slide-to=index class="#{'active' if @focuss.first == focus}"
+  div class="carousel-inner"
+    - @focuss.each do |focus|
+      div class="item #{'active' if @focuss.first == focus}"
+        img alt="" src=focus.image.url style="width:960px; height:400px;"
+        div class="carousel-caption"
+          p =focus.title
+  a class="carousel-control left" href="#myCarousel" data-slide="prev" &lsaquo;
+  a class="carousel-control right" href="#myCarousel" data-slide="next" &rsaquo;
