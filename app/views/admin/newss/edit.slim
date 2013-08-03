@@ -8,4 +8,8 @@
     img src=@news.image.thumb.url
   = f.input :focus, as: :radio_buttons
   = f.input :content, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} }
-  = f.submit "更新"
+  = f.input :applied, as: :radio_buttons,input_html: {value: false}
+  .control-group
+    label.control-label
+    .controls
+      = f.submit "更新"
