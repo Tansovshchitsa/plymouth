@@ -20,7 +20,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 #group :development do
-#gem "thin"
+gem "thin"
 #end
 gem 'jquery-rails'
   
@@ -31,7 +31,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-gem 'unicorn'
+# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
