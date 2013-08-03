@@ -1,3 +1,12 @@
+GIT
+  remote: git@github.com:zhiyisoft/bootstrap-rails.git
+  revision: 0752bf69de2578b8882fb15785f622852833dfe3
+  ref: HEAD
+  specs:
+    zhiyi-bootstrap-rails (2.3.1.1)
+      railties (>= 3.0)
+      sass (>= 3.2)
+
 GEM
   remote: http://ruby.taobao.org/
   specs:
@@ -196,11 +205,6 @@ GEM
     treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
-    twitter-bootstrap-rails (2.2.7)
-      actionpack (>= 3.1)
-      execjs
-      rails (>= 3.1)
-      railties (>= 3.1)
     tzinfo (0.3.37)
     uglifier (2.1.2)
       execjs (>= 0.3.0)
@@ -250,6 +254,6 @@ DEPENDENCIES
   spreadsheet
   state_machine
   thin
-  twitter-bootstrap-rails
   uglifier (>= 1.0.3)
   will_paginate_mongoid
+  zhiyi-bootstrap-rails!
