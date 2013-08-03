@@ -57,8 +57,8 @@ gem 'simple-navigation'
 gem 'simple-navigation-bootstrap'
 gem 'client_side_validations'
 gem 'client_side_validations-simple_form'
-gem "zhiyi-bootstrap-rails", :require => "bootstrap-rails", :git => "git@github.com:zhiyisoft/bootstrap-rails.git", :ref => "HEAD"
-# gem 'twitter-bootstrap-rails'
+# gem "zhiyi-bootstrap-rails", :require => "bootstrap-rails", :git => "git@github.com:zhiyisoft/bootstrap-rails.git", :ref => "HEAD"
+gem 'twitter-bootstrap-rails'
 gem "simple_form"
 gem "mongoid"
 gem 'mongoid_colored_logger', :group => :development
