@@ -1,5 +1,5 @@
-#source 'http://ruby.taobao.org/'
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org/'
+# source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
@@ -70,17 +70,17 @@ gem "bootstrap-will_paginate"
 gem 'redis'
 gem 'ckeditor'
 gem "cells"
-group :test do
-  gem "turn", :require => false
-  gem "rspec-rails"
-  gem "spork"
-  gem "database_cleaner"
-  gem "factory_girl_rails", :require => false
-  gem "capybara"
-  gem "launchy"
-  gem "guard-spork"
-  gem "guard-rspec"
-  gem "guard-livereload"
-  gem "guard-bundler"
-  gem "simplecov", :require => false
-end
+# group :test do
+#   gem "turn", :require => false
+#   gem "rspec-rails"
+#   gem "spork"
+#   gem "database_cleaner"
+#   gem "factory_girl_rails", :require => false
+#   gem "capybara"
+#   gem "launchy"
+#   gem "guard-spork"
+#   gem "guard-rspec"
+#   gem "guard-livereload"
+#   gem "guard-bundler"
+#   gem "simplecov", :require => false
+# end
