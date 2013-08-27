@@ -79,4 +79,7 @@ div class="banner_logo"
                     - @color = menu["color"]
                     - Type.where(title: menu["name"].to_s).first.children.each do |children|
                       - colors = Settings.color.split(",").delete_if {|e| e == @color }
-                      = link_to children.title, newss_path(:type_id => children.id), style: "background:#{@color = colors.shuffle.first};"
+                      - if menu["name"].to_s == "关于学联"
+                        = link_to children.title, summarys_path(:type_id => children.id), style: "background:#{@color = colors.shuffle.first};"
+                      - else
+                        = link_to children.title, newss_path(:type_id => children.id), style: "background:#{@color = colors.shuffle.first};"
