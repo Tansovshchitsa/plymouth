@@ -12,6 +12,9 @@ SimpleNavigation::Configuration.run do |navigation|
       Type.where(title: "关于学联").first.children.each do |children|
         archive.item :title, children.title, new_admin_summary_path(:type_id => children.id)
       end if Type.where(title: "关于学联").first
+      Type.where(title: "联系我们").first.children.each do |children|
+        archive.item :title, children.title, new_admin_summary_path(:type_id => children.id)
+      end if Type.where(title: "联系我们").first
     end
     primary.item :link, "键值对管理", admin_types_path
     primary.item :new,'文章管理',admin_newss_path
