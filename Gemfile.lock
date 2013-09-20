@@ -1,5 +1,5 @@
 GEM
-  remote: http://ruby.taobao.org/
+  remote: https://rubygems.org/
   specs:
     actionmailer (3.2.13)
       actionpack (= 3.2.13)
@@ -136,6 +136,11 @@ GEM
       activesupport (= 3.2.13)
       bundler (~> 1.0)
       railties (= 3.2.13)
+    rails-i18n (0.7.4)
+      i18n (~> 0.5)
+    rails_kindeditor (0.4.0)
+      carrierwave
+      mini_magick
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -239,6 +244,8 @@ DEPENDENCIES
   mongoid_colored_logger
   rack-gridfs
   rails (= 3.2.13)
+  rails-i18n
+  rails_kindeditor (~> 0.4.0)
   redis
   resque
   sass-rails (~> 3.2.3)
