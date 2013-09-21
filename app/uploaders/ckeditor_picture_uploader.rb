@@ -1,4 +1,6 @@
 # encoding: utf-8
+require "digest/md5"
+require 'carrierwave/processing/mini_magick'
 class CkeditorPictureUploader < CarrierWave::Uploader::Base
   include Ckeditor::Backend::CarrierWave
 
@@ -8,13 +10,13 @@ class CkeditorPictureUploader < CarrierWave::Uploader::Base
   # include CarrierWave::ImageScience
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
+  storage :grid_fs
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
-  def store_dir
-    "uploads/ckeditor/pictures/#{model.id}"
-  end
+  #def store_dir
+   # "uploads/ckeditor/pictures/#{model.id}"
+  #end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
@@ -44,4 +46,5 @@ class CkeditorPictureUploader < CarrierWave::Uploader::Base
   def extension_white_list
     Ckeditor.image_file_types
   end
+
 end

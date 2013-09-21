@@ -71,7 +71,7 @@ test:
     default:
       database: plymouth_test
       hosts:
-        - project.zhiyisoft.com:27017
+        - localhost:27017
       options:
         consistency: :strong
         # In the test environment we lower the retries and retry interval to
@@ -90,4 +90,4 @@ production:
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - project.zhiyisoft.com:27017
+        - localhost:27017

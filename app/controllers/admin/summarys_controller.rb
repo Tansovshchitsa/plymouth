@@ -14,7 +14,7 @@ module Admin
     end
 
     def create
-      @summary = Summary.where(id: params[:summary][:id]).empty? ? Summary.new(params[:summary]) : Summary.where(id: params[:summary][:id]).first
+      @summary = Summary.where(type_id: params[:summary][:type_id]).empty? ? Summary.new(params[:summary]) : Summary.where(type_id: params[:summary][:type_id]).first
       if @summary.update_attributes(params[:summary])
         redirect_to admin_home_index_path
       else
