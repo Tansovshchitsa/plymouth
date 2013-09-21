@@ -84,4 +84,7 @@ div class="banner_logo"
                       - elsif menu["name"].to_s == "联系我们"
                         = link_to children.title, summarys_path(:type_id => children.id), style: "background:#{@color = colors.shuffle.first};"
                       - else
-                        = link_to children.title, newss_path(:type_id => children.id), style: "background:#{@color = colors.shuffle.first};"
+                        if children.title == "学联会员卡"
+                          link_to children.title, newss_path(:id => '5234540abdb2d4ad39000014'),style: "background:#{@color = colors.shuffle.first};"
+                        else
+                          = link_to children.title, newss_path(:type_id => children.id), style: "background:#{@color = colors.shuffle.first};"
